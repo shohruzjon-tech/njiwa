@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "getQuote": "Demander un devis"
+  },
+  "hero": {
+    "title": "Des solutions sur mesure pour vos véhicules et votre énergie",
+    "subtitle": "NJIWA vous accompagne dans l'importation de véhicules d'occasion, l'installation de systèmes solaires, le suivi GPS et le contrôle de carburant. Des services fiables, pensés pour l'Afrique.",
+    "cta": "Découvrir nos services",
+    "secondaryCta": "Demander un devis gratuit"
+  },
+  "about": {
+    "title": "Qui sommes-nous",
+    "subtitle": "Un partenaire de confiance à votre service",
+    "description": "NJIWA est une entreprise spécialisée dans l'importation de véhicules d'occasion de qualité et dans les solutions technologiques pour le transport et l'énergie. Nous mettons notre expertise au service des particuliers, des entreprises et des institutions afin de leur offrir des produits fiables à des prix compétitifs.",
+    "mission": {
+      "title": "Notre mission",
+      "description": "Fournir des véhicules d'occasion rigoureusement sélectionnés et des solutions énergétiques et technologiques innovantes qui répondent aux besoins réels de nos clients, tout en garantissant un service irréprochable et un accompagnement personnalisé."
+    },
+    "vision": {
+      "title": "Notre vision",
+      "description": "Devenir la référence en Afrique centrale pour l'importation de véhicules d'occasion et les solutions intégrées en énergie solaire, suivi de flotte et gestion de carburant, en plaçant la satisfaction client au cœur de chaque décision."
+    },
+    "values": [
+      {
+        "title": "Fiabilité",
+        "description": "Chaque véhicule est inspecté et chaque système est testé pour garantir une qualité irréprochable à nos clients."
+      },
+      {
+        "title": "Transparence",
+        "description": "Nous communiquons ouvertement sur les prix, les délais et l'état de chaque produit ou service que nous proposons."
+      },
+      {
+        "title": "Innovation",
+        "description": "Nous adoptons les technologies les plus récentes pour offrir des solutions performantes et adaptées au contexte local."
+      },
+      {
+        "title": "Engagement client",
+        "description": "Votre satisfaction est notre priorité. Nous vous accompagnons avant, pendant et après chaque projet."
+      }
+    ]
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Des solutions complètes pour vos véhicules et votre énergie",
+    "items": [
+      {
+        "id": "used-vehicles",
+        "title": "Importation de véhicules d'occasion",
+        "description": "Nous importons des véhicules d'occasion soigneusement sélectionnés en provenance du Japon, des États-Unis, du Royaume-Uni et d'Europe. Chaque véhicule fait l'objet d'une inspection mécanique approfondie avant expédition afin de vous garantir un achat en toute sérénité.",
+        "features": [
+          "Véhicules inspectés et certifiés avant expédition",
+          "Large choix : berlines, SUV, pick-up, utilitaires et camions",
+          "Importation depuis le Japon, les USA, Londres et l'Europe",
+          "Accompagnement complet : sélection, transit, dédouanement et livraison",
+          "Prix compétitifs et conditions de paiement flexibles"
+        ]
+      },
+      {
+        "id": "solar-energy",
+        "title": "Systèmes d'énergie solaire",
+        "description": "Nous concevons et installons des systèmes solaires sur mesure pour les habitations, les entreprises et les sites isolés. Réduisez votre dépendance au réseau électrique et maîtrisez vos coûts énergétiques grâce à une énergie propre et renouvelable.",
+        "features": [
+          "Étude technique et dimensionnement personnalisé",
+          "Panneaux solaires haute performance et onduleurs certifiés",
+          "Solutions résidentielles, commerciales et industrielles",
+          "Systèmes autonomes ou hybrides avec batteries de stockage",
+          "Maintenance préventive et assistance technique après installation"
+        ]
+      },
+      {
+        "id": "gps-tracking",
+        "title": "Suivi GPS de véhicules",
+        "description": "Gardez le contrôle total de votre flotte grâce à nos systèmes de géolocalisation en temps réel. Notre technologie GPS vous permet de suivre vos véhicules, d'optimiser les itinéraires et de renforcer la sécurité de vos actifs.",
+        "features": [
+          "Localisation en temps réel sur carte interactive",
+          "Historique détaillé des trajets et des arrêts",
+          "Alertes configurables : survitesse, zones interdites, démarrage non autorisé",
+          "Tableau de bord accessible depuis ordinateur et smartphone",
+          "Installation discrète et compatible avec tous types de véhicules"
+        ]
+      },
+      {
+        "id": "fuel-monitoring",
+        "title": "Contrôle et gestion de carburant",
+        "description": "Éliminez les pertes de carburant et optimisez votre consommation grâce à nos solutions de surveillance avancées. Nos capteurs de haute précision détectent les anomalies en temps réel, que ce soit sur vos véhicules ou vos cuves de stockage.",
+        "features": [
+          "Capteurs de niveau de carburant de haute précision",
+          "Détection instantanée des vols et des fuites",
+          "Surveillance des cuves fixes et des réservoirs de véhicules",
+          "Rapports détaillés de consommation et alertes automatiques",
+          "Intégration avec les systèmes GPS pour une gestion unifiée de la flotte"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez un projet ou une question ? Notre équipe est à votre écoute.",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "service": "Service souhaité",
+      "message": "Votre message",
+      "submit": "Envoyer le message",
+      "serviceOptions": [
+        "Importation de véhicules d'occasion",
+        "Systèmes d'énergie solaire",
+        "Suivi GPS de véhicules",
+        "Contrôle de carburant",
+        "Autre demande"
+      ],
+      "successMessage": "Merci pour votre message ! Notre équipe vous répondra dans les plus brefs délais."
+    }
+  },
+  "footer": {
+    "description": "NJIWA est votre partenaire de confiance pour l'importation de véhicules d'occasion, les solutions solaires, le suivi GPS et la gestion de carburant.",
+    "quickLinks": "Liens rapides",
+    "services": "Nos services",
+    "contactInfo": {
+      "address": "Kinshasa, République Démocratique du Congo",
+      "phone": "+243 000 000 000",
+      "email": "contact@njiwa.cd"
+    },
+    "rights": "Tous droits réservés."
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "getQuote": "Demander un devis",
+    "contactUs": "Nous contacter",
+    "readMore": "Lire la suite"
+  }
+}

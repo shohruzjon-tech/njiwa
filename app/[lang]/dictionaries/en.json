@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "hero": {
+    "title": "Tailored solutions for your vehicles and energy needs",
+    "subtitle": "NJIWA helps you import quality used vehicles, install solar energy systems, track your fleet with GPS, and monitor fuel consumption. Reliable services, designed for Africa.",
+    "cta": "Explore our services",
+    "secondaryCta": "Request a free quote"
+  },
+  "about": {
+    "title": "About us",
+    "subtitle": "A trusted partner at your service",
+    "description": "NJIWA is a company specializing in the importation of quality used vehicles and in technology-driven solutions for transport and energy. We leverage our expertise to serve individuals, businesses, and institutions with reliable products at competitive prices.",
+    "mission": {
+      "title": "Our mission",
+      "description": "To deliver carefully selected used vehicles alongside innovative energy and technology solutions that meet our clients' real-world needs — backed by impeccable service and personalized support at every step."
+    },
+    "vision": {
+      "title": "Our vision",
+      "description": "To become Central Africa's leading provider of used vehicle imports and integrated solutions in solar energy, fleet tracking, and fuel management — with customer satisfaction at the heart of every decision."
+    },
+    "values": [
+      {
+        "title": "Reliability",
+        "description": "Every vehicle is inspected and every system is tested to guarantee uncompromising quality for our clients."
+      },
+      {
+        "title": "Transparency",
+        "description": "We communicate openly about pricing, timelines, and the condition of every product or service we offer."
+      },
+      {
+        "title": "Innovation",
+        "description": "We adopt the latest technologies to deliver high-performance solutions tailored to the local context."
+      },
+      {
+        "title": "Customer commitment",
+        "description": "Your satisfaction is our priority. We support you before, during, and after every project."
+      }
+    ]
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "Complete solutions for your vehicles and energy needs",
+    "items": [
+      {
+        "id": "used-vehicles",
+        "title": "Used Vehicle Import",
+        "description": "We import carefully selected used vehicles from Japan, the United States, the United Kingdom, and Europe. Every vehicle undergoes a thorough mechanical inspection before shipping so you can buy with complete confidence.",
+        "features": [
+          "Vehicles inspected and certified before shipping",
+          "Wide selection: sedans, SUVs, pickups, vans, and trucks",
+          "Imports from Japan, the USA, London, and Europe",
+          "Full support: selection, transit, customs clearance, and delivery",
+          "Competitive pricing and flexible payment terms"
+        ]
+      },
+      {
+        "id": "solar-energy",
+        "title": "Solar Energy Systems",
+        "description": "We design and install custom solar systems for homes, businesses, and remote sites. Reduce your dependence on the power grid and take control of your energy costs with clean, renewable power.",
+        "features": [
+          "Technical assessment and custom system sizing",
+          "High-performance solar panels and certified inverters",
+          "Residential, commercial, and industrial solutions",
+          "Off-grid or hybrid systems with battery storage",
+          "Preventive maintenance and post-installation technical support"
+        ]
+      },
+      {
+        "id": "gps-tracking",
+        "title": "GPS Vehicle Tracking",
+        "description": "Take full control of your fleet with our real-time geolocation systems. Our GPS technology lets you track your vehicles, optimize routes, and strengthen the security of your assets.",
+        "features": [
+          "Real-time location on an interactive map",
+          "Detailed trip and stop history",
+          "Configurable alerts: speeding, geofencing, unauthorized ignition",
+          "Dashboard accessible from computer and smartphone",
+          "Discreet installation compatible with all vehicle types"
+        ]
+      },
+      {
+        "id": "fuel-monitoring",
+        "title": "Fuel Monitoring & Management",
+        "description": "Eliminate fuel losses and optimize consumption with our advanced monitoring solutions. Our high-precision sensors detect anomalies in real time — whether on your vehicles or stationary storage tanks.",
+        "features": [
+          "High-precision fuel level sensors",
+          "Instant detection of theft and leaks",
+          "Monitoring for stationary tanks and vehicle fuel systems",
+          "Detailed consumption reports and automatic alerts",
+          "Integration with GPS systems for unified fleet management"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Have a project or a question? Our team is ready to help.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "service": "Service of interest",
+      "message": "Your message",
+      "submit": "Send message",
+      "serviceOptions": [
+        "Used Vehicle Import",
+        "Solar Energy Systems",
+        "GPS Vehicle Tracking",
+        "Fuel Monitoring",
+        "Other inquiry"
+      ],
+      "successMessage": "Thank you for your message! Our team will get back to you as soon as possible."
+    }
+  },
+  "footer": {
+    "description": "NJIWA is your trusted partner for used vehicle imports, solar energy solutions, GPS tracking, and fuel management.",
+    "quickLinks": "Quick links",
+    "services": "Our services",
+    "contactInfo": {
+      "address": "Kinshasa, Democratic Republic of the Congo",
+      "phone": "+243 000 000 000",
+      "email": "contact@njiwa.cd"
+    },
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "getQuote": "Get a quote",
+    "contactUs": "Contact us",
+    "readMore": "Read more"
+  }
+}
