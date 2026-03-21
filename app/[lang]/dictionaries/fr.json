@@ -115,7 +115,10 @@
         "Autre demande"
       ],
       "successMessage": "Merci pour votre message ! Notre équipe vous répondra dans les plus brefs délais."
-    }
+    },
+    "addressLabel": "Adresse",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "Email"
   },
   "footer": {
     "description": "NJIWA est votre partenaire de confiance pour l'importation de véhicules d'occasion, les solutions solaires, le suivi GPS et la gestion de carburant.",

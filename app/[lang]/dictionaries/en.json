@@ -115,7 +115,10 @@
         "Other inquiry"
       ],
       "successMessage": "Thank you for your message! Our team will get back to you as soon as possible."
-    }
+    },
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email"
   },
   "footer": {
     "description": "NJIWA is your trusted partner for used vehicle imports, solar energy solutions, GPS tracking, and fuel management.",

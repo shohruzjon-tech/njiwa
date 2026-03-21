@@ -69,7 +69,7 @@ export default async function ContactPage({
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">
-                    {lang === "fr" ? "Adresse" : "Address"}
+                    {dict.contact.addressLabel}
                   </h3>
                   <p className="mt-1 text-sm text-gray-600">
                     {dict.footer.contactInfo.address}
@@ -86,7 +86,7 @@ export default async function ContactPage({
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">
-                    {lang === "fr" ? "Téléphone" : "Phone"}
+                    {dict.contact.phoneLabel}
                   </h3>
                   <p className="mt-1 text-sm text-gray-600">
                     {dict.footer.contactInfo.phone}
@@ -103,7 +103,7 @@ export default async function ContactPage({
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Email</h3>
+                  <h3 className="font-semibold text-gray-900">{dict.contact.emailLabel}</h3>
                   <p className="mt-1 text-sm text-gray-600">
                     {dict.footer.contactInfo.email}
                   </p>
