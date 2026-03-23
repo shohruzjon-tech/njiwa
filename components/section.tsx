@@ -19,12 +19,12 @@ export default function Section({
         {(title || subtitle) && (
           <div className="mb-16 text-center animate-[fade-in_0.6s_ease-out]">
             {title && (
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
+              <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-400">
                 {subtitle}
               </p>
             )}

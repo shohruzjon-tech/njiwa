@@ -17,10 +17,13 @@ export default function Navbar({ dict, lang }: NavbarProps) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100/50 bg-white/80 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-background/80 backdrop-blur-xl backdrop-saturate-150">
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <a href={`/${lang}`} className="text-xl font-bold tracking-tight text-primary">
+        <a
+          href={`/${lang}`}
+          className="text-xl font-bold tracking-tight text-white"
+        >
           NJIWA
         </a>
 
@@ -30,7 +33,7 @@ export default function Navbar({ dict, lang }: NavbarProps) {
             <a
               key={link.href}
               href={link.href}
-              className="rounded-lg px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-primary"
+              className="rounded-lg px-4 py-2 text-sm font-medium text-zinc-400 transition-colors hover:bg-white/[0.04] hover:text-white"
             >
               {link.label}
             </a>
@@ -41,13 +44,13 @@ export default function Navbar({ dict, lang }: NavbarProps) {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href={`/${otherLang}`}
-            className="rounded-lg px-3 py-1.5 text-sm font-medium text-gray-500 transition-colors hover:bg-gray-50 hover:text-primary"
+            className="rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-500 transition-colors hover:text-white"
           >
             {otherLang.toUpperCase()}
           </a>
           <a
             href={`/${lang}/contact`}
-            className="rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-primary-light hover:shadow-md hover:-translate-y-0.5"
+            className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-background shadow-sm transition-all duration-300 hover:bg-zinc-200 hover:shadow-md hover:-translate-y-0.5"
           >
             {dict.nav.getQuote}
           </a>

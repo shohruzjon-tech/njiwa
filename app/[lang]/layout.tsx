@@ -29,7 +29,7 @@ export default async function RootLayout({
   const dict = await getDictionary(lang as Locale);
 
   return (
-    <html lang={lang} className={geist.variable}>
+    <html lang={lang} className={`${geist.variable} dark`}>
       <body className="flex min-h-screen flex-col bg-background text-foreground antialiased font-sans">
         <Navbar dict={dict} lang={lang} />
         <main className="flex-1">{children}</main>

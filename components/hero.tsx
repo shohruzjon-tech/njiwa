@@ -18,27 +18,36 @@ export default function Hero({ dict, lang }: HeroProps) {
         className="object-cover object-center"
       />
 
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-primary-dark/60" />
+      {/* Overlays */}
+      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />
 
       {/* Background decorative elements */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
-        <div className="absolute -bottom-32 -left-32 h-[500px] w-[500px] rounded-full bg-accent/10 blur-3xl" />
+        <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-primary/8 blur-[120px]" />
+        <div className="absolute -bottom-32 -left-32 h-[500px] w-[500px] rounded-full bg-accent/6 blur-[120px]" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[85vh] max-w-7xl items-center px-6 py-32">
+      {/* Dot grid */}
+      <div className="pointer-events-none absolute inset-0 dot-grid" />
+
+      <div className="relative mx-auto flex min-h-[90vh] max-w-7xl items-center px-6 py-32">
         <div className="max-w-3xl">
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl animate-[fade-in_0.8s_ease-out]">
+          {/* Pill badge */}
+          <div className="mb-6 animate-[fade-in_0.8s_ease-out]">
+            <span className="pill-badge">NJIWA</span>
+          </div>
+
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-7xl animate-[fade-in_0.8s_ease-out_0.1s_both]">
             {dict.hero.title}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-blue-100/90 sm:text-xl animate-[fade-in_0.8s_ease-out_0.2s_both]">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-400 sm:text-xl animate-[fade-in_0.8s_ease-out_0.25s_both]">
             {dict.hero.subtitle}
           </p>
           <div className="mt-10 flex flex-wrap gap-4 animate-[fade-in_0.8s_ease-out_0.4s_both]">
             <a
               href={`/${lang}/services`}
-              className="inline-flex items-center rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-primary-dark shadow-lg transition-all duration-300 hover:bg-accent-light hover:shadow-xl hover:-translate-y-0.5"
+              className="inline-flex items-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-background shadow-lg transition-all duration-300 hover:bg-zinc-200 hover:shadow-xl hover:-translate-y-0.5"
             >
               {dict.hero.cta}
               <svg
@@ -55,7 +64,7 @@ export default function Hero({ dict, lang }: HeroProps) {
             </a>
             <a
               href={`/${lang}/contact`}
-              className="inline-flex items-center rounded-full border-2 border-white/30 bg-white/10 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-white/60 hover:bg-white/20"
+              className="inline-flex items-center rounded-full border border-white/[0.12] bg-white/[0.04] px-8 py-4 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-white/[0.2] hover:bg-white/[0.08]"
             >
               {dict.hero.secondaryCta}
             </a>
@@ -63,8 +72,8 @@ export default function Hero({ dict, lang }: HeroProps) {
         </div>
       </div>
 
-      {/* Bottom gradient fade */}
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      {/* Bottom gradient fade into next section */}
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 }
