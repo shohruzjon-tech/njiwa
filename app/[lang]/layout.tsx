@@ -5,6 +5,8 @@ import { getDictionary, hasLocale } from "./dictionaries";
 import type { Locale } from "./dictionaries";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const geist = localFont({
   src: "../../public/geist-latin.woff2",
@@ -34,6 +36,8 @@ export default async function RootLayout({
         <Navbar dict={dict} lang={lang} />
         <main className="flex-1">{children}</main>
         <Footer dict={dict} lang={lang} />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
