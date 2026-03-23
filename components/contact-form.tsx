@@ -2,22 +2,33 @@
 
 import { useState } from "react";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import Select from "@/components/select";
 
 interface ContactFormProps {
   dict: Dictionary;
 }
 
+type FormStatus = "idle" | "submitting" | "success" | "error";
+
 export default function ContactForm({ dict }: ContactFormProps) {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
   const [errors, setErrors] = useState<Record<string, boolean>>({});
 
   const form = dict.contact.form;
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  const serviceOptions = form.serviceOptions.map((option: string) => ({
+    value: option,
+    label: option,
+  }));
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const name = formData.get("name") as string;
     const email = formData.get("email") as string;
+    const phone = (formData.get("phone") as string) || "";
+    const service = (formData.get("service") as string) || "";
     const message = formData.get("message") as string;
 
     const newErrors: Record<string, boolean> = {};
@@ -32,10 +43,32 @@ export default function ContactForm({ dict }: ContactFormProps) {
     }
 
     setErrors({});
-    setSubmitted(true);
+    setStatus("submitting");
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, service, message }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setStatus("error");
+        setErrorMessage(data.error || "Something went wrong.");
+        return;
+      }
+
+      setStatus("success");
+    } catch {
+      setStatus("error");
+      setErrorMessage("Network error. Please try again.");
+    }
   }
 
-  if (submitted) {
+  if (status === "success") {
     return (
       <div className="flex flex-col items-center justify-center rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-12 text-center animate-[fade-in_0.5s_ease-out]">
         <svg
@@ -108,14 +141,12 @@ export default function ContactForm({ dict }: ContactFormProps) {
         >
           {form.service}
         </label>
-        <select id="service" name="service" className="input-dark">
-          <option value="">—</option>
-          {form.serviceOptions.map((option: string) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
+        <Select
+          id="service"
+          name="service"
+          options={serviceOptions}
+          placeholder="—"
+        />
       </div>
 
       {/* Message */}
@@ -134,11 +165,44 @@ export default function ContactForm({ dict }: ContactFormProps) {
         />
       </div>
 
+      {/* Error banner */}
+      {status === "error" && errorMessage && (
+        <div className="rounded-xl border border-red-500/20 bg-red-500/5 px-4 py-3 text-sm text-red-400 animate-[fade-in_0.3s_ease-out]">
+          {errorMessage}
+        </div>
+      )}
+
       <button
         type="submit"
-        className="w-full rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-background shadow-lg transition-all duration-300 hover:bg-zinc-200 hover:shadow-xl hover:-translate-y-0.5 cursor-pointer"
+        disabled={status === "submitting"}
+        className="w-full rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-background shadow-lg transition-all duration-300 hover:bg-zinc-200 hover:shadow-xl hover:-translate-y-0.5 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
       >
-        {form.submit}
+        {status === "submitting" ? (
+          <span className="inline-flex items-center gap-2">
+            <svg
+              className="h-4 w-4 animate-spin"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
+            </svg>
+            {form.submit}
+          </span>
+        ) : (
+          form.submit
+        )}
       </button>
     </form>
   );

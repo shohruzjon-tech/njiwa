@@ -7,6 +7,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwa.cd";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
+};
 
 const geist = localFont({
   src: "../../public/geist-latin.woff2",

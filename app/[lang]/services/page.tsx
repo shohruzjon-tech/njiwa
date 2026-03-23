@@ -13,14 +13,24 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
 
+  const otherLang = lang === "fr" ? "en" : "fr";
+
   return {
     title: `${dict.services.title} — NJIWA`,
     description: dict.services.subtitle,
+    alternates: {
+      canonical: `/${lang}/services`,
+      languages: {
+        [otherLang]: `/${otherLang}/services`,
+      },
+    },
     openGraph: {
       title: `${dict.services.title} — NJIWA`,
       description: dict.services.subtitle,
       type: "website",
       locale: lang,
+      alternateLocale: otherLang,
+      url: `/${lang}/services`,
     },
   };
 }
