@@ -142,7 +142,148 @@ export async function POST(request: NextRequest) {
     </div>
   `;
 
+  // --- Confirmation email to sender ---
+  const confirmationHtml = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head><meta charset="UTF-8" /></head>
+    <body style="margin: 0; padding: 0; background-color: #09090b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #09090b; padding: 40px 0;">
+        <tr>
+          <td align="center">
+            <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width: 560px; width: 100%;">
+
+              <!-- Logo / Brand -->
+              <tr>
+                <td align="center" style="padding: 0 0 32px;">
+                  <span style="font-size: 28px; font-weight: 700; letter-spacing: -0.5px; color: #ffffff;">NJIWA</span>
+                </td>
+              </tr>
+
+              <!-- Card -->
+              <tr>
+                <td style="background-color: #111111; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; overflow: hidden;">
+
+                  <!-- Blue accent bar -->
+                  <div style="height: 4px; background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 50%, #3b82f6 100%);"></div>
+
+                  <!-- Check icon + heading -->
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center" style="padding: 40px 40px 0;">
+                        <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(16,185,129,0.1); border: 2px solid rgba(16,185,129,0.25); display: inline-block; line-height: 64px; text-align: center;">
+                          <span style="font-size: 28px; line-height: 64px;">✓</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding: 20px 40px 0;">
+                        <h1 style="margin: 0; font-size: 22px; font-weight: 600; color: #ffffff; letter-spacing: -0.3px;">
+                          Message Received
+                        </h1>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding: 12px 40px 0;">
+                        <p style="margin: 0; font-size: 15px; line-height: 24px; color: #a1a1aa;">
+                          Hi <strong style="color: #d4d4d8;">${escapeHtml(name)}</strong>, thank you for reaching out to us. We&rsquo;ve received your message and our team will get back to you shortly.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- Divider -->
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style="padding: 28px 40px;">
+                        <div style="height: 1px; background: rgba(255,255,255,0.06);"></div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- Message summary -->
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style="padding: 0 40px;">
+                        <p style="margin: 0 0 16px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #71717a;">
+                          Your Message Summary
+                        </p>
+                      </td>
+                    </tr>
+                    ${
+                      service
+                        ? `<tr>
+                            <td style="padding: 0 40px 12px;">
+                              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background: rgba(255,255,255,0.03); border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                                <tr>
+                                  <td style="padding: 12px 16px;">
+                                    <p style="margin: 0 0 2px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #71717a;">Service</p>
+                                    <p style="margin: 0; font-size: 14px; color: #e4e4e7;">${escapeHtml(service)}</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>`
+                        : ""
+                    }
+                    <tr>
+                      <td style="padding: 0 40px 12px;">
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background: rgba(255,255,255,0.03); border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+                          <tr>
+                            <td style="padding: 12px 16px;">
+                              <p style="margin: 0 0 2px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #71717a;">Message</p>
+                              <p style="margin: 0; font-size: 14px; color: #e4e4e7; white-space: pre-wrap; line-height: 22px;">${escapeHtml(message)}</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- Response time note -->
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style="padding: 16px 40px 36px;">
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background: rgba(59,130,246,0.06); border-radius: 10px; border: 1px solid rgba(59,130,246,0.12);">
+                          <tr>
+                            <td style="padding: 14px 16px;">
+                              <p style="margin: 0; font-size: 13px; line-height: 20px; color: #93c5fd;">
+                                ⏱ We typically respond within <strong>24 hours</strong> during business days. If your matter is urgent, don&rsquo;t hesitate to call us directly.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+
+              <!-- Footer -->
+              <tr>
+                <td align="center" style="padding: 28px 0 0;">
+                  <p style="margin: 0 0 6px; font-size: 13px; color: #52525b;">
+                    NJIWA &mdash; Innovation &amp; Excellence
+                  </p>
+                  <p style="margin: 0; font-size: 12px; color: #3f3f46;">
+                    Lubumbashi, DR Congo &bull; <a href="https://njiwa.cd" style="color: #60a5fa; text-decoration: none;">njiwa.cd</a>
+                  </p>
+                </td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </body>
+    </html>
+  `;
+
+  const confirmationText = `Hi ${name},\n\nThank you for contacting NJIWA. We've received your message and will get back to you within 24 hours.\n\nYour message summary:\n${service ? `Service: ${service}\n` : ""}Message: ${message}\n\nBest regards,\nThe NJIWA Team\nhttps://njiwa.cd`;
+
   try {
+    // Send notification to team
     await transporter.sendMail({
       from: `"NJIWA Contact" <${config.user}>`,
       replyTo: email,
@@ -150,6 +291,15 @@ export async function POST(request: NextRequest) {
       subject: `[NJIWA] New message from ${name}${service ? ` — ${service}` : ""}`,
       html: htmlBody,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "N/A"}\nService: ${service || "N/A"}\n\nMessage:\n${message}`,
+    });
+
+    // Send confirmation to the sender
+    await transporter.sendMail({
+      from: `"NJIWA" <${config.user}>`,
+      to: email,
+      subject: "We received your message — NJIWA",
+      html: confirmationHtml,
+      text: confirmationText,
     });
   } catch (err) {
     console.error("Failed to send email:", err);
