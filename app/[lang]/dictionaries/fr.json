@@ -136,5 +136,14 @@
     "getQuote": "Demander un devis",
     "contactUs": "Nous contacter",
     "readMore": "Lire la suite"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "heading": "404",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "suggestion": "Vérifiez l'URL ou explorez nos pages ci-dessous.",
+    "backHome": "Retour à l'accueil",
+    "browseServices": "Découvrir nos services",
+    "contactUs": "Nous contacter"
   }
 }

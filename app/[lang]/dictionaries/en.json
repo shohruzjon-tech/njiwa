@@ -136,5 +136,14 @@
     "getQuote": "Get a quote",
     "contactUs": "Contact us",
     "readMore": "Read more"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "heading": "404",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "suggestion": "Check the URL or explore our pages below.",
+    "backHome": "Back to Home",
+    "browseServices": "Explore our services",
+    "contactUs": "Contact us"
   }
 }
