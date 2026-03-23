@@ -6,7 +6,9 @@ const defaultLocale = "fr";
 
 function getLocale(request: NextRequest): string {
   const acceptLanguage = request.headers.get("accept-language") || "";
-  const preferred = acceptLanguage.split(",").map((l) => l.split(";")[0].trim().toLowerCase());
+  const preferred = acceptLanguage
+    .split(",")
+    .map((l) => l.split(";")[0].trim().toLowerCase());
 
   for (const lang of preferred) {
     const short = lang.substring(0, 2);
@@ -22,7 +24,7 @@ export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
   if (pathnameHasLocale) return;
@@ -33,5 +35,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|api|favicon.ico|.*\\..*).*)"],
+  matcher: ["/((?!_next|api|favicon.ico|sitemap.xml|robots.txt|.*\\..*).*)"],
 };
