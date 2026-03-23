@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 interface HeroProps {
@@ -7,7 +8,19 @@ interface HeroProps {
 
 export default function Hero({ dict, lang }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-dark via-primary to-primary-light">
+    <section id="main_hero_banner" className="relative overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="/app-banners/main.webp"
+        alt="Main hero banner"
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-primary-dark/60" />
+
       {/* Background decorative elements */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
@@ -16,14 +29,10 @@ export default function Hero({ dict, lang }: HeroProps) {
 
       <div className="relative mx-auto flex min-h-[85vh] max-w-7xl items-center px-6 py-32">
         <div className="max-w-3xl">
-          <h1
-            className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl animate-[fade-in_0.8s_ease-out]"
-          >
+          <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl animate-[fade-in_0.8s_ease-out]">
             {dict.hero.title}
           </h1>
-          <p
-            className="mt-6 max-w-2xl text-lg leading-relaxed text-blue-100/90 sm:text-xl animate-[fade-in_0.8s_ease-out_0.2s_both]"
-          >
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-blue-100/90 sm:text-xl animate-[fade-in_0.8s_ease-out_0.2s_both]">
             {dict.hero.subtitle}
           </p>
           <div className="mt-10 flex flex-wrap gap-4 animate-[fade-in_0.8s_ease-out_0.4s_both]">
@@ -32,8 +41,16 @@ export default function Hero({ dict, lang }: HeroProps) {
               className="inline-flex items-center rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-primary-dark shadow-lg transition-all duration-300 hover:bg-accent-light hover:shadow-xl hover:-translate-y-0.5"
             >
               {dict.hero.cta}
-              <svg className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              <svg
+                className="ml-2 h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
               </svg>
             </a>
             <a

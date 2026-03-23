@@ -66,9 +66,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             {dict.hero.secondaryCta}
           </h2>
-          <p className="mt-4 text-lg text-blue-100/90">
-            {dict.about.subtitle}
-          </p>
+          <p className="mt-4 text-lg text-blue-100/90">{dict.about.subtitle}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href={`/${lang}/contact`}
