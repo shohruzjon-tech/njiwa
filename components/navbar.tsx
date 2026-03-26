@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import MobileNav from "./mobile-nav";
 
@@ -13,6 +14,7 @@ export default function Navbar({ dict, lang }: NavbarProps) {
     { href: `/${lang}`, label: dict.nav.home },
     { href: `/${lang}/about`, label: dict.nav.about },
     { href: `/${lang}/services`, label: dict.nav.services },
+    { href: `/${lang}/team`, label: dict.nav.team },
     { href: `/${lang}/contact`, label: dict.nav.contact },
   ];
 
@@ -20,11 +22,8 @@ export default function Navbar({ dict, lang }: NavbarProps) {
     <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-background/80 backdrop-blur-xl backdrop-saturate-150">
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <a
-          href={`/${lang}`}
-          className="text-xl font-bold tracking-tight text-white"
-        >
-          NJIWA
+        <a href={`/${lang}`} className="flex items-center">
+          <Image src="/logo.svg" alt="NJIWA" width={44} height={44} priority />
         </a>
 
         {/* Desktop nav */}

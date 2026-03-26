@@ -5,6 +5,9 @@ const banners: Record<string, string> = {
   "solar-energy": "/service-banners/solar_energy.webp",
   "gps-tracking": "/service-banners/gps_tracking.webp",
   "fuel-monitoring": "/service-banners/fuel_monitoring.webp",
+  // Add drilling.webp and environmental.webp to /public/service-banners/ to replace these placeholders
+  drilling: "/service-banners/gps_tracking.webp",
+  environmental: "/service-banners/solar_energy.webp",
 };
 
 const icons: Record<string, React.ReactNode> = {
@@ -52,6 +55,29 @@ const icons: Record<string, React.ReactNode> = {
       strokeWidth="1.5"
     >
       <path d="M3 22V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M3 22h12M7 10h4m4-2 2 2v6a1 1 0 0 0 1 1h0a1 1 0 0 0 1-1V8l-2-2" />
+    </svg>
+  ),
+  drilling: (
+    <svg
+      className="h-5 w-5"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <circle cx="12" cy="5" r="3" />
+      <path d="M12 8v12M9 17l3 3 3-3M6 21h12" />
+    </svg>
+  ),
+  environmental: (
+    <svg
+      className="h-5 w-5"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path d="M12 22V12M12 12C12 7 17 3 22 3c0 8-5 9.5-10 9.5M12 12C12 7 7 3 2 3c0 8 5 9.5 10 9.5" />
     </svg>
   ),
 };

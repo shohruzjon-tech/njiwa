@@ -3,6 +3,7 @@ import { getDictionary, hasLocale } from "../dictionaries";
 import type { Locale } from "../dictionaries";
 import { notFound } from "next/navigation";
 import ServiceCard from "@/components/service-card";
+import Image from "next/image";
 
 export async function generateMetadata({
   params,
@@ -75,6 +76,78 @@ export default async function ServicesPage({
               expanded
             />
           ))}
+        </div>
+      </section>
+
+      {/* GPS Tracking Abroad */}
+      <section className="border-t border-white/[0.06] py-20 px-6">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-16 text-center animate-[fade-in_0.6s_ease-out]">
+            <span className="pill-badge mb-4">
+              {dict.services.gpsAbroad.title}
+            </span>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              {dict.services.gpsAbroad.title}
+            </h2>
+            <p className="mt-4 mx-auto max-w-2xl text-zinc-400">
+              {dict.services.gpsAbroad.subtitle}
+            </p>
+          </div>
+
+          <div className="space-y-16">
+            {dict.services.gpsAbroad.sections.map((section) => (
+              <div key={section.country}>
+                <div className="mb-8 flex items-center gap-4">
+                  <div className="h-px flex-1 bg-white/[0.06]" />
+                  <span className="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase">
+                    {section.country}
+                  </span>
+                  <div className="h-px flex-1 bg-white/[0.06]" />
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {section.tracks.map((track) => (
+                    <a
+                      key={track.videoId}
+                      href={`https://youtu.be/${track.videoId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative overflow-hidden rounded-xl bg-surface ring-1 ring-white/[0.06] transition-all duration-300 hover:-translate-y-1 hover:ring-primary/30 hover:shadow-xl"
+                    >
+                      <div className="relative aspect-video overflow-hidden">
+                        <Image
+                          src={`https://img.youtube.com/vi/${track.videoId}/hqdefault.jpg`}
+                          alt={track.label}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                        <div className="absolute inset-0 bg-black/30 transition-colors duration-300 group-hover:bg-black/10" />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:bg-white">
+                            <svg
+                              className="ml-1 h-5 w-5 text-background"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between p-4">
+                        <p className="text-sm font-medium text-white">
+                          {track.label}
+                        </p>
+                        <span className="text-xs text-primary-light">
+                          {dict.services.gpsAbroad.watchLabel} →
+                        </span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

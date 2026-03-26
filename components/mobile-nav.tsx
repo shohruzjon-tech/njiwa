@@ -16,6 +16,7 @@ export default function MobileNav({ dict, lang }: MobileNavProps) {
     { href: `/${lang}`, label: dict.nav.home },
     { href: `/${lang}/about`, label: dict.nav.about },
     { href: `/${lang}/services`, label: dict.nav.services },
+    { href: `/${lang}/team`, label: dict.nav.team },
     { href: `/${lang}/contact`, label: dict.nav.contact },
   ];
 

@@ -3,6 +3,7 @@
     "home": "Accueil",
     "about": "À propos",
     "services": "Services",
+    "team": "Notre équipe",
     "contact": "Contact",
     "getQuote": "Demander un devis"
   },
@@ -94,12 +95,137 @@
           "Rapports détaillés de consommation et alertes automatiques",
           "Intégration avec les systèmes GPS pour une gestion unifiée de la flotte"
         ]
+      },
+      {
+        "id": "drilling",
+        "title": "Forage des puits",
+        "description": "Nous exécutons des puits d'eau servant à des objectifs différents dans des milieux aussi différents. Nous assurons des études approfondies en vue de vous exécuter des puits de bonne qualité susceptibles de répondre exactement à vos attentes. Selon les objectifs de vos puits, nous observons les recommandations tant sécuritaires, hygiéniques et environnementales à votre satisfaction entière. Nous évoluons dans les espaces communautaires comme à l'industrie en général. Selon vos aspirations, les analyses de qualité de l'eau pourront vous être fournies au besoin.",
+        "features": [
+          "Études approfondies pour des puits de haute qualité",
+          "Respect des normes sécuritaires, hygiéniques et environnementales",
+          "Intervention en espaces communautaires et industriels",
+          "Analyses de qualité de l'eau disponibles sur demande",
+          "Expertise multi-milieux : eau domestique, industrielle et agricole"
+        ]
+      },
+      {
+        "id": "environmental",
+        "title": "Travaux environnementaux",
+        "description": "Ce siècle de forte industrialisation nous apporte plusieurs activités dont plusieurs d'entre elles, sont de nature à détruire l'environnement et ainsi rompre l'équilibre des écosystèmes. Nous vous assurons des études approfondies de vos activités de production afin de vous proposer des modes opératoires adéquats susceptibles de minimiser le plus possible l'impact sur l'environnement selon des normes universellement acceptées. Nous implémentons les solutions adéquates tout en garantissant une production saine. En résumé, nous vous prenons en charge dès la conception jusqu'à l'évacuation de tout type de déchet.",
+        "features": [
+          "Études d'impact environnemental de vos activités de production",
+          "Modes opératoires adaptés pour minimiser l'impact écologique",
+          "Solutions conformes aux normes environnementales universelles",
+          "Gestion complète des déchets : de la conception à l'évacuation",
+          "Garantie d'une production saine et durable"
+        ]
+      }
+    ],
+    "gpsAbroad": {
+      "title": "Suivi GPS à l'international",
+      "subtitle": "Nos traceurs GPS fonctionnent en temps réel dans plusieurs pays d'Afrique : Tanzanie, Zambie et RDC",
+      "watchLabel": "Voir la vidéo",
+      "sections": [
+        {
+          "country": "TANZANIE",
+          "tracks": [
+            { "label": "Dar es Salaam → Morogoro", "videoId": "eIvTMarnvk8" },
+            { "label": "Morogoro → Mikumi", "videoId": "U_axuAo9YZ0" },
+            { "label": "Mikumi → Iringa", "videoId": "8QsAzANjDjg" },
+            { "label": "Iringa → Makambako", "videoId": "ofvuWLpXv4E" },
+            { "label": "Makambako → Mbeya", "videoId": "AaxrS_S0lWk" },
+            { "label": "Mbeya → Tunduma", "videoId": "49BejNzGI7s" }
+          ]
+        },
+        {
+          "country": "ZAMBIE",
+          "tracks": [
+            { "label": "Nakonde → Mpika", "videoId": "gbsHOjIEmMc" },
+            { "label": "Mpika → Serenje", "videoId": "dfCHTP61J8Q" },
+            { "label": "Serenje → Kapiri Mposhi", "videoId": "tK-apTRp2RE" },
+            { "label": "Kapiri → Mufulira", "videoId": "2fvypZUk5bE" },
+            { "label": "Mokambo → Lubumbashi", "videoId": "mNR9jIxBsEk" }
+          ]
+        }
+      ]
+    }
+  },
+  "team": {
+    "title": "Notre équipe",
+    "subtitle": "Des professionnels passionnés au cœur de nos projets",
+    "metaDescription": "Rencontrez l'équipe NJIWA, des experts dédiés à l'importation de véhicules, l'énergie solaire, le GPS et l'environnement.",
+    "experienceLabel": "Expérience",
+    "emailLabel": "Courriel",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Lieu",
+    "nationalityLabel": "Nationalité",
+    "members": [
+      {
+        "id": "ventury",
+        "name": "Ventury LWAPULA KULAILA",
+        "role": "Directeur Général",
+        "experience": "15 ans",
+        "email": "chm@njiwardc.com",
+        "phone": "+243 81 405 5044",
+        "location": "Siège social à Lubumbashi",
+        "nationality": "Congolais"
+      },
+      {
+        "id": "mike",
+        "name": "Mike KAPAPA KULAILA",
+        "role": "Directeur Technique",
+        "experience": "6 ans",
+        "email": "mkulaila@njiwardc.com",
+        "phone": "+243 99 429 5180",
+        "location": "Siège social à Lubumbashi",
+        "nationality": "Congolais"
+      },
+      {
+        "id": "tegra",
+        "name": "Tegra MUKEBO WALUTABIBI",
+        "role": "Chef de projet",
+        "experience": "4 ans",
+        "email": "tmukebo@njiwardc.com",
+        "phone": "+255 760 424 942",
+        "location": "Bureau de liaison à Dar es Salaam (Tanzanie)",
+        "nationality": "Congolais"
+      },
+      {
+        "id": "plamedie",
+        "name": "Plamedie KAPAPA MUMBA",
+        "role": "Directrice Financière",
+        "experience": "2 ans",
+        "email": "pkapapa@njiwardc.com",
+        "phone": "+243 996 744 450",
+        "location": "Siège social à Lubumbashi",
+        "nationality": "Congolaise"
+      },
+      {
+        "id": "jimmy",
+        "name": "Jimmy Peter KAMPATE",
+        "role": "Chauffeur en Chef",
+        "experience": "12 ans",
+        "email": "",
+        "phone": "+255 673 828 085",
+        "location": "Bureau de liaison à Tunduma (Tanzanie)",
+        "nationality": "Tanzanien"
       }
     ]
   },
   "contact": {
     "title": "Contactez-nous",
     "subtitle": "Vous avez un projet ou une question ? Notre équipe est à votre écoute.",
+    "mapLabel": "Nous trouver",
+    "addressFull": {
+      "label": "Siège social",
+      "lines": [
+        "2, AV KAMBOVE, C/LUBUMBASHI",
+        "QUARTIER KIWELE",
+        "VILLE DE LUBUMBASHI",
+        "PROVINCE DU HAUT-KATANGA",
+        "REPUBLIQUE DEMOCRATIQUE DU CONGO"
+      ]
+    },
     "form": {
       "name": "Nom complet",
       "email": "Adresse e-mail",
@@ -112,6 +238,8 @@
         "Systèmes d'énergie solaire",
         "Suivi GPS de véhicules",
         "Contrôle de carburant",
+        "Forage des puits",
+        "Travaux environnementaux",
         "Autre demande"
       ],
       "successMessage": "Merci pour votre message ! Notre équipe vous répondra dans les plus brefs délais."
@@ -125,9 +253,9 @@
     "quickLinks": "Liens rapides",
     "services": "Nos services",
     "contactInfo": {
-      "address": "Kinshasa, République Démocratique du Congo",
-      "phone": "+243 000 000 000",
-      "email": "contact@njiwa.cd"
+      "address": "2, Av Kambove, Qr Kiwele, Lubumbashi, RDC",
+      "phone": "(+243) 994 295 180 / 814 055 044",
+      "email": "info@njiwardc.com"
     },
     "rights": "Tous droits réservés."
   },

@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "team": "Our team",
     "contact": "Contact",
     "getQuote": "Get a Quote"
   },
@@ -94,12 +95,137 @@
           "Detailed consumption reports and automatic alerts",
           "Integration with GPS systems for unified fleet management"
         ]
+      },
+      {
+        "id": "drilling",
+        "title": "Drilling boreholes",
+        "description": "We drill water boreholes for different objectives in diverse environments. We conduct in-depth studies to deliver high-quality wells precisely suited to your needs. We strictly observe safety, hygiene, and environmental standards to your complete satisfaction — serving both community spaces and industry. Water quality analysis can be provided on request.",
+        "features": [
+          "In-depth studies for high-quality borehole drilling",
+          "Compliance with safety, hygiene and environmental standards",
+          "Operations in community and industrial environments",
+          "Water quality analysis available on request",
+          "Multi-environment expertise: domestic, industrial and agricultural water"
+        ]
+      },
+      {
+        "id": "environmental",
+        "title": "Environmental tasks",
+        "description": "This century of intense industrialization brings numerous activities that can destroy the environment and disrupt ecosystem balance. We conduct thorough studies of your production activities to propose operating procedures that minimize environmental impact according to universally accepted standards. We implement adequate solutions while guaranteeing clean production. In summary, we take charge from design through to the evacuation of all types of waste.",
+        "features": [
+          "Environmental impact studies for your production activities",
+          "Tailored operating procedures to minimize ecological impact",
+          "Solutions compliant with universally accepted environmental standards",
+          "Complete waste management: from design to disposal",
+          "Ensuring clean and sustainable production"
+        ]
+      }
+    ],
+    "gpsAbroad": {
+      "title": "GPS Tracking Abroad",
+      "subtitle": "Our GPS trackers work in real-time across multiple African countries: Tanzania, Zambia and DRC",
+      "watchLabel": "Watch video",
+      "sections": [
+        {
+          "country": "TANZANIA",
+          "tracks": [
+            { "label": "Dar es Salaam → Morogoro", "videoId": "eIvTMarnvk8" },
+            { "label": "Morogoro → Mikumi", "videoId": "U_axuAo9YZ0" },
+            { "label": "Mikumi → Iringa", "videoId": "8QsAzANjDjg" },
+            { "label": "Iringa → Makambako", "videoId": "ofvuWLpXv4E" },
+            { "label": "Makambako → Mbeya", "videoId": "AaxrS_S0lWk" },
+            { "label": "Mbeya → Tunduma", "videoId": "49BejNzGI7s" }
+          ]
+        },
+        {
+          "country": "ZAMBIA",
+          "tracks": [
+            { "label": "Nakonde → Mpika", "videoId": "gbsHOjIEmMc" },
+            { "label": "Mpika → Serenje", "videoId": "dfCHTP61J8Q" },
+            { "label": "Serenje → Kapiri Mposhi", "videoId": "tK-apTRp2RE" },
+            { "label": "Kapiri → Mufulira", "videoId": "2fvypZUk5bE" },
+            { "label": "Mokambo → Lubumbashi", "videoId": "mNR9jIxBsEk" }
+          ]
+        }
+      ]
+    }
+  },
+  "team": {
+    "title": "Our team",
+    "subtitle": "Passionate professionals at the heart of our projects",
+    "metaDescription": "Meet the NJIWA team \u2014 dedicated experts in vehicle importation, solar energy, GPS tracking, and environmental solutions.",
+    "experienceLabel": "Experience",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "nationalityLabel": "Nationality",
+    "members": [
+      {
+        "id": "ventury",
+        "name": "Ventury LWAPULA KULAILA",
+        "role": "CEO",
+        "experience": "15 years",
+        "email": "chm@njiwardc.com",
+        "phone": "+243 81 405 5044",
+        "location": "HQ office in Lubumbashi",
+        "nationality": "Congolese"
+      },
+      {
+        "id": "mike",
+        "name": "Mike KAPAPA KULAILA",
+        "role": "CTO",
+        "experience": "6 years",
+        "email": "mkulaila@njiwardc.com",
+        "phone": "+243 99 429 5180",
+        "location": "HQ office in Lubumbashi",
+        "nationality": "Congolese"
+      },
+      {
+        "id": "tegra",
+        "name": "Tegra MUKEBO WALUTABIBI",
+        "role": "Project Manager",
+        "experience": "4 years",
+        "email": "tmukebo@njiwardc.com",
+        "phone": "+255 760 424 942",
+        "location": "Connecting office in Dar es Salaam (Tanzania)",
+        "nationality": "Congolese"
+      },
+      {
+        "id": "plamedie",
+        "name": "Plamedie KAPAPA MUMBA",
+        "role": "Financial Manager",
+        "experience": "2 years",
+        "email": "pkapapa@njiwardc.com",
+        "phone": "+243 996 744 450",
+        "location": "HQ Lubumbashi",
+        "nationality": "Congolese"
+      },
+      {
+        "id": "jimmy",
+        "name": "Jimmy Peter KAMPATE",
+        "role": "Driver Manager",
+        "experience": "12 years",
+        "email": "",
+        "phone": "+255 673 828 085",
+        "location": "Connecting office at Tunduma (Tanzania)",
+        "nationality": "Tanzanian"
       }
     ]
   },
   "contact": {
     "title": "Contact us",
     "subtitle": "Have a project or a question? Our team is ready to help.",
+    "mapLabel": "Find us",
+    "addressFull": {
+      "label": "Head quarter office",
+      "lines": [
+        "2, KAMBOVE STREET, C/LUBUMBASHI",
+        "KIWELE QUARTER",
+        "TOWN OF LUBUMBASHI",
+        "HAUT-KATANGA PROVINCE",
+        "DEMOCRATIC REPUBLIC OF CONGO"
+      ]
+    },
     "form": {
       "name": "Full name",
       "email": "Email address",
@@ -112,6 +238,8 @@
         "Solar Energy Systems",
         "GPS Vehicle Tracking",
         "Fuel Monitoring",
+        "Drilling boreholes",
+        "Environmental tasks",
         "Other inquiry"
       ],
       "successMessage": "Thank you for your message! Our team will get back to you as soon as possible."
@@ -125,9 +253,9 @@
     "quickLinks": "Quick links",
     "services": "Our services",
     "contactInfo": {
-      "address": "Kinshasa, Democratic Republic of the Congo",
-      "phone": "+243 000 000 000",
-      "email": "contact@njiwa.cd"
+      "address": "2, Kambove Street, Kiwele Quarter, Lubumbashi, DRC",
+      "phone": "(+243) 994 295 180 / 814 055 044",
+      "email": "info@njiwardc.com"
     },
     "rights": "All rights reserved."
   },

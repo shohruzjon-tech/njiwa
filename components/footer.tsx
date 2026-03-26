@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 interface FooterProps {
@@ -10,6 +11,7 @@ export default function Footer({ dict, lang }: FooterProps) {
     { href: `/${lang}`, label: dict.nav.home },
     { href: `/${lang}/about`, label: dict.nav.about },
     { href: `/${lang}/services`, label: dict.nav.services },
+    { href: `/${lang}/team`, label: dict.nav.team },
     { href: `/${lang}/contact`, label: dict.nav.contact },
   ];
 
@@ -24,11 +26,8 @@ export default function Footer({ dict, lang }: FooterProps) {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <a
-              href={`/${lang}`}
-              className="text-xl font-bold tracking-tight text-white"
-            >
-              NJIWA
+            <a href={`/${lang}`} className="flex items-center">
+              <Image src="/logo.svg" alt="NJIWA" width={44} height={44} />
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-500">
               {dict.footer.description}

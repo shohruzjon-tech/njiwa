@@ -5,7 +5,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwa.cd";
 const locales = ["fr", "en"] as const;
 const defaultLocale = "fr";
 
-const routes = ["", "/about", "/services", "/contact"];
+const routes = ["", "/about", "/services", "/team", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
