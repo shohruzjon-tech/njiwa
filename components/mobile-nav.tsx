@@ -70,7 +70,7 @@ export default function MobileNav({ dict, lang }: MobileNavProps) {
                 className="flex h-10 w-10 items-center justify-center rounded-lg text-lg transition-colors hover:bg-white/[0.04]"
                 title={otherLang === "en" ? "English" : "Français"}
               >
-                {otherLang === "en" ? "🇬🇧" : "🇫🇷"}
+                {otherLang === "en" ? "EN" : "🇫🇷"}
               </a>
               <a
                 href={`/${lang}/contact`}
