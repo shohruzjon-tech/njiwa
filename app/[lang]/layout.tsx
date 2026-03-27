@@ -40,6 +40,32 @@ export default async function RootLayout({
   return (
     <html lang={lang} className={`${geist.variable} dark`}>
       <body className="flex min-h-screen flex-col bg-background text-foreground antialiased font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "NJIWA",
+              url: "https://njiwardc.com",
+              logo: "https://njiwardc.com/logo.svg",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+243-994-295-180",
+                contactType: "customer service",
+                availableLanguage: ["French", "English"],
+              },
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "2, Av Kambove, Qr Kiwele",
+                addressLocality: "Lubumbashi",
+                addressRegion: "Haut-Katanga",
+                addressCountry: "CD",
+              },
+              sameAs: [],
+            }),
+          }}
+        />
         <Navbar dict={dict} lang={lang} />
         <main className="flex-1">{children}</main>
         <Footer dict={dict} lang={lang} />

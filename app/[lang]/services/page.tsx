@@ -45,8 +45,37 @@ export default async function ServicesPage({
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwardc.com";
+
+  const servicesJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: dict.services.title,
+    description: dict.services.subtitle,
+    url: `${baseUrl}/${lang}/services`,
+    numberOfItems: dict.services.items.length,
+    itemListElement: dict.services.items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Service",
+        name: item.title,
+        description: item.description,
+        provider: {
+          "@type": "Organization",
+          name: "NJIWA",
+          url: "https://njiwardc.com",
+        },
+      },
+    })),
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
       {/* Page header */}
       <div className="relative overflow-hidden border-b border-white/[0.06] py-28 px-6">
         {/* Decorative bg elements */}

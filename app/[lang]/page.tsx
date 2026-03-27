@@ -43,8 +43,23 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwardc.com";
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "NJIWA",
+            url: `${baseUrl}/${lang}`,
+            description: dict.hero.subtitle,
+            inLanguage: lang === "fr" ? "fr-CD" : "en",
+          }),
+        }}
+      />
       <Hero dict={dict} lang={lang} />
 
       {/* Services overview */}
