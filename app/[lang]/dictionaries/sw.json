@@ -1,0 +1,290 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "about": "Kuhusu sisi",
+    "services": "Huduma",
+    "team": "Timu yetu",
+    "contact": "Wasiliana nasi",
+    "getQuote": "Omba bei"
+  },
+  "hero": {
+    "title": "Suluhisho maalum kwa magari yako na nishati yako",
+    "subtitle": "NJIWA inakusaidia katika kuagiza magari yaliyotumika, ufungaji wa mifumo ya jua, ufuatiliaji wa GPS na udhibiti wa mafuta. Huduma za kuaminika, zilizoundwa kwa Afrika.",
+    "cta": "Gundua huduma zetu",
+    "secondaryCta": "Omba bei bila malipo"
+  },
+  "about": {
+    "title": "Sisi ni nani",
+    "subtitle": "Mshirika wa kuaminika katika huduma yako",
+    "description": "NJIWA ni kampuni inayotoa huduma mbalimbali kwa umma na biashara. Inajishughulisha hasa na uuzaji wa magari yaliyotumika yanayoagizwa kutoka ulimwenguni kote, ufungaji wa mifumo ya jua, uchimbaji wa maji katika jamii na biashara, tafiti na utekelezaji wa mifumo ya mazingira, ufungaji wa mifumo ya GPS na udhibiti wa mafuta kwenye magari yanayoendeshwa na injini na pia yasiyohamishika.",
+    "mission": {
+      "title": "Dhamira yetu",
+      "description": "Dhamira yetu ni kukupa magari, umeme, maji na kuhakikisha usalama wa magari yako huku tukilinda mazingira. Kazi zetu zote zinafanywa kwa njia inayoleta kuridhika kamili. Tunazingatia sana malalamiko yako ili kuboresha viwango vyetu ili kuridhika kwako kuwe kamili. Malalamiko na mapendekezo yako ni muhimu sana kwetu. Kwa msaada na ushirikiano wako, tunatoa huduma bora kwa bei shindani sana."
+    },
+    "vision": {
+      "title": "Maono yetu",
+      "description": "Tunalenga kuhakikisha uonekano wa kampuni yetu kupitia huduma bora tunayotoa kwa wateja wetu wapendwa. Kupitia uzito wetu, ubora, na upatikanaji tutaweza kufanya NJIWA izungumziwe katika vikao vikubwa vya Afrika. Kuwa rejea katika eneo moja au zaidi tunayofanya kazi. Tuna uhakika kwamba kuridhika kwa wateja wetu kutatufungulia milango yote."
+    },
+    "values": [
+      {
+        "title": "Kuaminika",
+        "description": "Kazi zetu zinafanywa si kwa kubahatisha, bali kwa imani. Kwa uzoefu mkubwa tulio nao katika nyanja mbalimbali, kazi zetu zinatekelezwa kwa kuzingatia viwango na vifaa vilivyochaguliwa vya ubora wa juu. Na udhibiti wa ubora unaambatana na hatua zote za utekelezaji wa kazi zetu mbalimbali."
+      },
+      {
+        "title": "Uwazi",
+        "description": "Tunawasiliana kwa njia rahisi na wazi na wateja wetu ili tufike kwenye matokeo wanayoyataka. Tunaeleza kazi zote, gharama na ratiba ili tuepuke usumbufu wowote."
+      },
+      {
+        "title": "Ubunifu",
+        "description": "Tunatekeleza kazi za wateja wetu kwa kutumia uzoefu wetu mkubwa ili kuwafurahisha zaidi ya matarajio yao. Hii ndiyo hali yetu ya akili tunapotoa huduma."
+      },
+      {
+        "title": "Kujitolea kwa mteja",
+        "description": "Kuridhika kwako ndio kipaumbele chetu. Ndiyo maana hatukuachi. Tuko nawe kabla, wakati na baada ya mradi ili kuridhika kwako kuwe kamili."
+      }
+    ]
+  },
+  "services": {
+    "title": "Huduma zetu",
+    "subtitle": "Suluhisho kamili kwa magari yako, uchimbaji wa maji, miradi ya mazingira na nishati",
+    "items": [
+      {
+        "id": "solar-energy",
+        "title": "Mifumo ya nishati ya jua",
+        "description": "Tunabuni na kufunga mifumo ya jua iliyobinafsishwa kwa makazi, biashara na maeneo ya mbali. Punguza utegemezi wako kwa gridi ya umeme na udhibiti gharama zako za nishati kwa nishati safi na endelevu.",
+        "features": [
+          "Utafiti wa kiufundi na upimaji wa kibinafsi",
+          "Paneli za jua zenye utendaji wa juu na inverters zilizoidhinishwa",
+          "Suluhisho za makazi, biashara na viwanda",
+          "Mifumo ya kujitegemea au mseto yenye betri za kuhifadhi",
+          "Matengenezo ya kuzuia na msaada wa kiufundi baada ya ufungaji"
+        ]
+      },
+      {
+        "id": "drilling",
+        "title": "Uchimbaji wa visima",
+        "description": "Tunachimba visima vya maji vinavyotumika kwa madhumuni mbalimbali katika mazingira tofauti. Tunafanya tafiti za kina ili kukuchimbia visima vya ubora unaokidhi matarajio yako. Kulingana na malengo ya visima vyako, tunazingatia mapendekezo ya usalama, usafi na mazingira kwa kuridhika kwako kamili. Tunafanya kazi katika maeneo ya jamii na viwanda kwa ujumla. Kulingana na matarajio yako, uchambuzi wa ubora wa maji unaweza kutolewa inapohitajika.",
+        "features": [
+          "Tafiti za kina kwa visima vya ubora wa juu",
+          "Kuzingatia viwango vya usalama, usafi na mazingira",
+          "Uingiliaji katika maeneo ya jamii na viwanda",
+          "Uchambuzi wa ubora wa maji unapatikana kwa ombi",
+          "Utaalamu wa mazingira mengi: maji ya nyumbani, viwanda na kilimo"
+        ]
+      },
+      {
+        "id": "used-vehicles",
+        "title": "Uagizaji wa magari yaliyotumika",
+        "description": "Tunaagiza magari yaliyotumika yaliyochaguliwa kwa uangalifu kutoka Japan, Marekani, Uingereza na Ulaya. Kila gari linakaguliwa kwa kina kabla ya kusafirishwa ili kukuhakikishia ununuzi salama.",
+        "features": [
+          "Magari yaliyokaguliwa na kuthibitishwa kabla ya kusafirishwa",
+          "Uchaguzi mpana: sedan, SUV, pick-up, magari ya biashara na malori",
+          "Uagizaji kutoka Japan, Marekani, London na Ulaya",
+          "Msaada kamili: uteuzi, usafiri, forodha na uwasilishaji",
+          "Bei shindani na masharti ya malipo yanayobadilika"
+        ]
+      },
+      {
+        "id": "rare-parts",
+        "title": "Uuzaji wa vipuri adimu vya magari",
+        "description": "Katika juhudi za kutoa msaada zaidi kwa wateja wetu wapendwa, tunauza vipuri ambavyo havipatikani kwa urahisi katika soko letu la ndani. Tunafanya kazi na huduma yenye uwezo mkubwa wa kutafuta vipuri vya ubora ambavyo tunaagiza kutoka kote ulimwenguni.",
+        "features": [
+          "Utafutaji wa vipuri adimu na vigumu kupatikana ndani ya nchi",
+          "Mtandao wa kimataifa wa wasambazaji waaminifu",
+          "Dhamana ya ubora kwa vipuri vyote vilivyoagizwa",
+          "Muda wa uwasilishaji wa haraka na wa kuaminika",
+          "Msaada wa kiufundi kwa ufungaji na matengenezo"
+        ]
+      },
+      {
+        "id": "gps-tracking",
+        "title": "Ufuatiliaji wa GPS wa magari",
+        "description": "Dhibiti kikamilifu msafara wako kwa mifumo yetu ya geolocation ya wakati halisi. Teknolojia yetu ya GPS inakuwezesha kufuatilia magari yako, kuboresha njia na kuimarisha usalama wa mali zako.",
+        "features": [
+          "Mahali halisi kwenye ramani shirikishi",
+          "Historia ya kina ya safari na vituo",
+          "Arifa zinazoweza kusanidiwa: kasi kupita kiasi, maeneo marufuku, kuanzisha bila idhini",
+          "Dashibodi inayopatikana kutoka kompyuta na simu",
+          "Ufungaji wa siri unaooana na aina zote za magari"
+        ]
+      },
+      {
+        "id": "fuel-monitoring",
+        "title": "Udhibiti na usimamizi wa mafuta",
+        "description": "Ondoa hasara za mafuta na uboreshe matumizi yako kwa suluhisho zetu za ufuatiliaji wa hali ya juu. Sensorer zetu za usahihi wa juu zinagundua hitilafu kwa wakati halisi, iwe kwenye magari yako au tanki za kuhifadhi.",
+        "features": [
+          "Sensorer za kiwango cha mafuta za usahihi wa juu",
+          "Kugundua mara moja wizi na uvujaji",
+          "Ufuatiliaji wa tanki za kudumu na matangi ya magari",
+          "Ripoti za kina za matumizi na arifa za kiotomatiki",
+          "Ujumuishaji na mifumo ya GPS kwa usimamizi uliounganishwa wa msafara"
+        ]
+      },
+      {
+        "id": "environmental",
+        "title": "Kazi za mazingira",
+        "description": "Karne hii ya viwanda vikubwa inaleta shughuli nyingi ambazo baadhi yake zinaweza kuharibu mazingira na kuvunja usawa wa mifumo ya ikolojia. Tunakuhakikishia tafiti za kina za shughuli zako za uzalishaji ili kupendekeza njia zinazofaa za kupunguza kadri iwezekanavyo athari kwa mazingira kulingana na viwango vinavyokubaliwa ulimwenguni. Tunatekeleza suluhisho zinazofaa huku tukihakikisha uzalishaji salama. Kwa muhtasari, tunakushughulikia tangu kubuni hadi uondoaji wa taka za aina zote.",
+        "features": [
+          "Tafiti za athari za mazingira za shughuli zako za uzalishaji",
+          "Njia za uendeshaji zilizorekebishwa kupunguza athari za kiikolojia",
+          "Suluhisho zinazozingatia viwango vya mazingira vya ulimwengu",
+          "Usimamizi kamili wa taka: kutoka kubuni hadi uondoaji",
+          "Dhamana ya uzalishaji salama na endelevu"
+        ]
+      }
+    ],
+    "gpsAbroad": {
+      "title": "Ufuatiliaji wa GPS kimataifa",
+      "subtitle": "Vifuatiliaji vyetu vya GPS vinafanya kazi kwa wakati halisi katika nchi kadhaa za Afrika",
+      "watchLabel": "Tazama video",
+      "sections": [
+        {
+          "country": "TANZANIA",
+          "tracks": [
+            { "label": "Dar es Salaam → Morogoro", "videoId": "eIvTMarnvk8" },
+            { "label": "Morogoro → Mikumi", "videoId": "U_axuAo9YZ0" },
+            { "label": "Mikumi → Iringa", "videoId": "8QsAzANjDjg" },
+            { "label": "Iringa → Makambako", "videoId": "ofvuWLpXv4E" },
+            { "label": "Makambako → Mbeya", "videoId": "AaxrS_S0lWk" },
+            { "label": "Mbeya → Tunduma", "videoId": "49BejNzGI7s" }
+          ]
+        },
+        {
+          "country": "ZAMBIA",
+          "tracks": [
+            { "label": "Nakonde → Mpika", "videoId": "gbsHOjIEmMc" },
+            { "label": "Mpika → Serenje", "videoId": "dfCHTP61J8Q" },
+            { "label": "Serenje → Kapiri Mposhi", "videoId": "tK-apTRp2RE" },
+            { "label": "Kapiri → Mufulira", "videoId": "2fvypZUk5bE" },
+            { "label": "Mokambo → Lubumbashi", "videoId": "mNR9jIxBsEk" }
+          ]
+        }
+      ]
+    }
+  },
+  "team": {
+    "title": "Timu yetu",
+    "subtitle": "Wataalamu wenye shauku katika miradi yetu",
+    "metaDescription": "Kutana na timu ya NJIWA, wataalamu waliojitolea katika uagizaji wa magari, nishati ya jua, GPS na mazingira.",
+    "experienceLabel": "Uzoefu",
+    "emailLabel": "Barua pepe",
+    "phoneLabel": "Simu",
+    "locationLabel": "Mahali",
+    "nationalityLabel": "Uraia",
+    "members": [
+      {
+        "id": "ventury",
+        "name": "Ventury LWAPULA KULAILA",
+        "role": "Mkurugenzi Mkuu",
+        "experience": "Miaka 15",
+        "email": "chm@njiwardc.com",
+        "phone": "+243 81 405 5044",
+        "location": "Makao makuu Lubumbashi",
+        "nationality": "Mkongolezi"
+      },
+      {
+        "id": "mike",
+        "name": "Mike KAPAPA KULAILA",
+        "role": "Mkurugenzi wa Kiufundi",
+        "experience": "Miaka 6",
+        "email": "mkulaila@njiwardc.com",
+        "phone": "+243 99 429 5180",
+        "location": "Makao makuu Lubumbashi",
+        "nationality": "Mkongolezi"
+      },
+      {
+        "id": "tegra",
+        "name": "Tegra MUKEBO WALUTABIBI",
+        "role": "Meneja wa Mradi",
+        "experience": "Miaka 4",
+        "email": "tmukebo@njiwardc.com",
+        "phone": "+255 760 424 942",
+        "location": "Ofisi ya uhusiano Dar es Salaam (Tanzania)",
+        "nationality": "Mkongolezi"
+      },
+      {
+        "id": "plamedie",
+        "name": "Plamedie KAPAPA MUMBA",
+        "role": "Mkurugenzi wa Fedha",
+        "experience": "Miaka 2",
+        "email": "pkapapa@njiwardc.com",
+        "phone": "+243 996 744 450",
+        "location": "Makao makuu Lubumbashi",
+        "nationality": "Mkongolezi"
+      },
+      {
+        "id": "jimmy",
+        "name": "Jimmy Peter KAMPATE",
+        "role": "Dereva Mkuu",
+        "experience": "Miaka 12",
+        "email": "",
+        "phone": "+255 673 828 085",
+        "location": "Ofisi ya uhusiano Tunduma (Tanzania)",
+        "nationality": "Mtanzania"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Wasiliana nasi",
+    "subtitle": "Una mradi au swali? Timu yetu iko tayari kukusaidia.",
+    "mapLabel": "Tafuta mahali tulipo",
+    "addressFull": {
+      "label": "Makao makuu",
+      "lines": [
+        "2, AV KAMBOVE, C/LUBUMBASHI",
+        "QUARTIER KIWELE",
+        "JIJI LA LUBUMBASHI",
+        "MKOA WA HAUT-KATANGA",
+        "JAMHURI YA KIDEMOKRASIA YA KONGO"
+      ]
+    },
+    "form": {
+      "name": "Jina kamili",
+      "email": "Anwani ya barua pepe",
+      "phone": "Nambari ya simu",
+      "service": "Huduma inayohitajika",
+      "message": "Ujumbe wako",
+      "submit": "Tuma ujumbe",
+      "serviceOptions": [
+        "Mifumo ya nishati ya jua",
+        "Uchimbaji wa visima",
+        "Uagizaji wa magari yaliyotumika",
+        "Uuzaji wa vipuri adimu vya magari",
+        "Ufuatiliaji wa GPS wa magari",
+        "Udhibiti wa mafuta",
+        "Kazi za mazingira",
+        "Ombi lingine"
+      ],
+      "successMessage": "Asante kwa ujumbe wako! Timu yetu itakujibu haraka iwezekanavyo."
+    },
+    "addressLabel": "Anwani",
+    "phoneLabel": "Simu",
+    "emailLabel": "Barua pepe"
+  },
+  "footer": {
+    "description": "NJIWA ni mshirika wako wa kuaminika kwa uagizaji wa magari yaliyotumika, suluhisho za jua, ufuatiliaji wa GPS na usimamizi wa mafuta.",
+    "quickLinks": "Viungo vya haraka",
+    "services": "Huduma zetu",
+    "contactInfo": {
+      "address": "2, Av Kambove, Qr Kiwele, Lubumbashi, DRC",
+      "phone": "(+243) 994 295 180 / 814 055 044",
+      "email": "info@njiwardc.com"
+    },
+    "rights": "Haki zote zimehifadhiwa."
+  },
+  "common": {
+    "learnMore": "Soma zaidi",
+    "getQuote": "Omba bei",
+    "contactUs": "Wasiliana nasi",
+    "readMore": "Soma zaidi"
+  },
+  "notFound": {
+    "title": "Ukurasa haupatikani",
+    "heading": "404",
+    "description": "Samahani, ukurasa unaoutafuta haupo au umehamishwa.",
+    "suggestion": "Angalia URL au tazama kurasa zetu hapa chini.",
+    "backHome": "Rudi nyumbani",
+    "browseServices": "Gundua huduma zetu",
+    "contactUs": "Wasiliana nasi"
+  }
+}

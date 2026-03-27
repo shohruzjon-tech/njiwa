@@ -20,7 +20,8 @@ export async function generateMetadata({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
-  const otherLang = lang === "fr" ? "en" : "fr";
+  const allLocales = ["fr", "en", "sw"] as const;
+  const otherLocales = allLocales.filter((l) => l !== lang);
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwardc.com";
 
   return {
@@ -29,7 +30,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `${baseUrl}/${lang}/team`,
       languages: {
-        [otherLang]: `${baseUrl}/${otherLang}/team`,
+        ...Object.fromEntries(
+          otherLocales.map((l) => [l, `${baseUrl}/${l}/team`]),
+        ),
         "x-default": `${baseUrl}/fr/team`,
       },
     },
@@ -38,7 +41,7 @@ export async function generateMetadata({
       description: dict.team.metaDescription,
       type: "website",
       locale: lang,
-      alternateLocale: otherLang,
+      alternateLocale: otherLocales as unknown as string[],
       url: `${baseUrl}/${lang}/team`,
     },
   };

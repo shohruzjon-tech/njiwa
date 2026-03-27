@@ -2,8 +2,14 @@ import type { MetadataRoute } from "next";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwardc.com";
 
-const locales = ["fr", "en"] as const;
+const locales = ["fr", "en", "sw"] as const;
 const defaultLocale = "fr";
+
+const localeToHreflang: Record<string, string> = {
+  fr: "fr-CD",
+  en: "en",
+  sw: "sw",
+};
 
 const routes = ["", "/about", "/services", "/team", "/contact"];
 
@@ -23,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: {
             ...Object.fromEntries(
               locales.map((l) => [
-                l === defaultLocale ? "fr-CD" : "en",
+                localeToHreflang[l],
                 `${BASE_URL}/${l}${route}`,
               ]),
             ),

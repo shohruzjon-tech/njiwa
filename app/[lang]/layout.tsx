@@ -22,7 +22,7 @@ const geist = localFont({
 });
 
 export function generateStaticParams() {
-  return [{ lang: "fr" }, { lang: "en" }];
+  return [{ lang: "fr" }, { lang: "en" }, { lang: "sw" }];
 }
 
 export default async function RootLayout({
@@ -53,7 +53,7 @@ export default async function RootLayout({
                 "@type": "ContactPoint",
                 telephone: "+243-994-295-180",
                 contactType: "customer service",
-                availableLanguage: ["French", "English"],
+                availableLanguage: ["French", "English", "Swahili"],
               },
               address: {
                 "@type": "PostalAddress",
