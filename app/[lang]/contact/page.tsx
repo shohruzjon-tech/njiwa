@@ -231,7 +231,7 @@ export default async function ContactPage({
           </div>
           <div className="overflow-hidden rounded-3xl ring-1 ring-white/[0.06] shadow-2xl">
             <iframe
-              src="https://maps.google.com/maps?q=2+Avenue+Kambove+Lubumbashi+Haut-Katanga+DRC&output=embed&z=15"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3907.5401079040316!2d27.486731!3d-11.656084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2s!4v1774607517529!5m2!1sen!2s"
               width="100%"
               height="480"
               style={{ border: 0, display: "block" }}

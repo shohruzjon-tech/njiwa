@@ -67,9 +67,10 @@ export default function MobileNav({ dict, lang }: MobileNavProps) {
             <div className="mt-2 flex items-center gap-3 border-t border-white/[0.06] pt-4">
               <a
                 href={`/${otherLang}`}
-                className="rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-500 transition-colors hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-lg text-lg transition-colors hover:bg-white/[0.04]"
+                title={otherLang === "en" ? "English" : "Français"}
               >
-                {otherLang.toUpperCase()}
+                {otherLang === "en" ? "🇬🇧" : "🇫🇷"}
               </a>
               <a
                 href={`/${lang}/contact`}

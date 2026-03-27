@@ -5,9 +5,9 @@ const banners: Record<string, string> = {
   "solar-energy": "/service-banners/solar_energy.webp",
   "gps-tracking": "/service-banners/gps_tracking.webp",
   "fuel-monitoring": "/service-banners/fuel_monitoring.webp",
-  // Add drilling.webp and environmental.webp to /public/service-banners/ to replace these placeholders
-  drilling: "/service-banners/gps_tracking.webp",
-  environmental: "/service-banners/solar_energy.webp",
+  drilling: "/service-banners/borehole_drilling.png",
+  environmental: "/service-banners/environmental_tasks.png",
+  "rare-parts": "/service-banners/auto_parts.png",
 };
 
 const icons: Record<string, React.ReactNode> = {
@@ -78,6 +78,18 @@ const icons: Record<string, React.ReactNode> = {
       strokeWidth="1.5"
     >
       <path d="M12 22V12M12 12C12 7 17 3 22 3c0 8-5 9.5-10 9.5M12 12C12 7 7 3 2 3c0 8 5 9.5 10 9.5" />
+    </svg>
+  ),
+  "rare-parts": (
+    <svg
+      className="h-5 w-5"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <circle cx="12" cy="12" r="3" />
+      <path d="M12 1v4m0 14v4M4.22 4.22l2.83 2.83m9.9 9.9 2.83 2.83M1 12h4m14 0h4M4.22 19.78l2.83-2.83m9.9-9.9 2.83-2.83" />
     </svg>
   ),
 };

@@ -3,128 +3,140 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "team": "Our team",
+    "team": "Our Team",
     "contact": "Contact",
     "getQuote": "Get a Quote"
   },
   "hero": {
-    "title": "Tailored solutions for your vehicles and energy needs",
-    "subtitle": "NJIWA helps you import quality used vehicles, install solar energy systems, track your fleet with GPS, and monitor fuel consumption. Reliable services, designed for Africa.",
-    "cta": "Explore our services",
+    "title": "Tailored solutions for your vehicles and energy",
+    "subtitle": "NJIWA assists you with used vehicle imports, solar system installation, GPS tracking and fuel control. Reliable services designed for Africa.",
+    "cta": "Discover our services",
     "secondaryCta": "Request a free quote"
   },
   "about": {
-    "title": "About us",
+    "title": "About Us",
     "subtitle": "A trusted partner at your service",
-    "description": "NJIWA is a company specializing in the importation of quality used vehicles and in technology-driven solutions for transport and energy. We leverage our expertise to serve individuals, businesses, and institutions with reliable products at competitive prices.",
+    "description": "NJIWA is a company that offers a wide range of services to both the general public and businesses. It focuses primarily on the sale of used vehicles imported from around the world, installation of solar systems, drilling water wells in communities and businesses, studies and implementation of environmental systems, installation of GPS systems as well as fuel control on motorized and static vehicles.",
     "mission": {
-      "title": "Our mission",
-      "description": "To deliver carefully selected used vehicles alongside innovative energy and technology solutions that meet our clients' real-world needs — backed by impeccable service and personalized support at every step."
+      "title": "Our Mission",
+      "description": "Our mission is to provide you with vehicles, electricity, water and ensure the security of your vehicles while protecting the environment. All our work is conducted in a manner that produces complete satisfaction. We are very attentive to your concerns in order to improve our standards so that your satisfaction is total. Your concerns and suggestions mean a great deal to us. With your support and guidance, we provide quality service at very competitive prices compared to the competition."
     },
     "vision": {
-      "title": "Our vision",
-      "description": "To become Central Africa's leading provider of used vehicle imports and integrated solutions in solar energy, fleet tracking, and fuel management — with customer satisfaction at the heart of every decision."
+      "title": "Our Vision",
+      "description": "We aim to ensure the visibility of our company through quality service rendered to our valued clientele. Through our seriousness, quality, and availability we will be able to have NJIWA spoken of in great African forums. To be a reference in one or more of the fields in which we operate. We are very confident that our customers' satisfaction will open all doors for us."
     },
     "values": [
       {
         "title": "Reliability",
-        "description": "Every vehicle is inspected and every system is tested to guarantee uncompromising quality for our clients."
+        "description": "Our work is conducted not through trial and error, but with conviction. With the strong experience we have in the various fields, our work is executed in respect of standards and materials selected for high quality. And quality controls accompany all stages of the realization of our various tasks."
       },
       {
         "title": "Transparency",
-        "description": "We communicate openly about pricing, timelines, and the condition of every product or service we offer."
+        "description": "We communicate in a very simple and open manner with our clients so that we arrive at what they want. We explicitly outline all tasks, costs and timing in order to keep us away from unpleasantness."
       },
       {
         "title": "Innovation",
-        "description": "We adopt the latest technologies to deliver high-performance solutions tailored to the local context."
+        "description": "We execute our clients' work using our vast experience in order to delight them beyond their expectations. Such is our state of mind when we render services."
       },
       {
-        "title": "Customer commitment",
-        "description": "Your satisfaction is our priority. We support you before, during, and after every project."
+        "title": "Client Engagement",
+        "description": "Your satisfaction is our priority. That is why we do not abandon you. We are with you before, during and after the project so that your satisfaction is complete."
       }
     ]
   },
   "services": {
-    "title": "Our services",
-    "subtitle": "Complete solutions for your vehicles and energy needs",
+    "title": "Our Services",
+    "subtitle": "Complete solutions for your vehicles, water drilling, environmental projects and energy",
     "items": [
       {
-        "id": "used-vehicles",
-        "title": "Used Vehicle Import",
-        "description": "We import carefully selected used vehicles from Japan, the United States, the United Kingdom, and Europe. Every vehicle undergoes a thorough mechanical inspection before shipping so you can buy with complete confidence.",
+        "id": "solar-energy",
+        "title": "Solar energy systems",
+        "description": "We design and install customized solar systems for residential, commercial and remote sites. Reduce your dependence on the electrical grid and control your energy costs with clean, renewable energy.",
         "features": [
-          "Vehicles inspected and certified before shipping",
-          "Wide selection: sedans, SUVs, pickups, vans, and trucks",
-          "Imports from Japan, the USA, London, and Europe",
-          "Full support: selection, transit, customs clearance, and delivery",
-          "Competitive pricing and flexible payment terms"
+          "Technical study and personalized dimensioning",
+          "High-performance solar panels and certified inverters",
+          "Residential, commercial and industrial solutions",
+          "Autonomous or hybrid systems with battery storage",
+          "Preventive maintenance and technical support after installation"
         ]
       },
       {
-        "id": "solar-energy",
-        "title": "Solar Energy Systems",
-        "description": "We design and install custom solar systems for homes, businesses, and remote sites. Reduce your dependence on the power grid and take control of your energy costs with clean, renewable power.",
+        "id": "drilling",
+        "title": "Water well drilling",
+        "description": "We execute water wells serving different purposes in different environments. We conduct in-depth studies to execute wells of good quality capable of meeting your expectations exactly. According to the objectives of your wells, we observe safety, hygiene and environmental recommendations to your complete satisfaction. We operate in community spaces as well as in industry in general. According to your aspirations, water quality analyses can be provided as needed.",
         "features": [
-          "Technical assessment and custom system sizing",
-          "High-performance solar panels and certified inverters",
-          "Residential, commercial, and industrial solutions",
-          "Off-grid or hybrid systems with battery storage",
-          "Preventive maintenance and post-installation technical support"
+          "In-depth studies for high-quality wells",
+          "Compliance with safety, hygiene and environmental standards",
+          "Intervention in community and industrial spaces",
+          "Water quality analyses available on request",
+          "Multi-environment expertise: domestic, industrial and agricultural water"
+        ]
+      },
+      {
+        "id": "used-vehicles",
+        "title": "Used vehicle imports",
+        "description": "We import carefully selected used vehicles from Japan, the United States, the United Kingdom and Europe. Each vehicle undergoes thorough mechanical inspection before shipment to ensure you a safe purchase.",
+        "features": [
+          "Inspected and certified vehicles before shipment",
+          "Wide selection: sedans, SUVs, pick-ups, commercial vehicles and trucks",
+          "Import from Japan, USA, London and Europe",
+          "Complete support: selection, transit, customs clearance and delivery",
+          "Competitive prices and flexible payment terms"
+        ]
+      },
+      {
+        "id": "rare-parts",
+        "title": "Sale of rare automobile parts",
+        "description": "As part of providing even more support to our valued clients, we sell parts that are not easily found on our local market. We work with a very competent service to research quality parts that we order from all over the world.",
+        "features": [
+          "Sourcing rare and hard-to-find parts locally",
+          "Global network of trusted suppliers",
+          "Quality guarantee on all ordered parts",
+          "Fast and reliable delivery times",
+          "Technical support for installation and maintenance"
         ]
       },
       {
         "id": "gps-tracking",
-        "title": "GPS Vehicle Tracking",
-        "description": "Take full control of your fleet with our real-time geolocation systems. Our GPS technology lets you track your vehicles, optimize routes, and strengthen the security of your assets.",
+        "title": "Vehicle GPS tracking",
+        "description": "Take full control of your fleet with our real-time geolocation systems. Our GPS technology allows you to track your vehicles, optimize routes and strengthen the security of your assets.",
         "features": [
-          "Real-time location on an interactive map",
-          "Detailed trip and stop history",
-          "Configurable alerts: speeding, geofencing, unauthorized ignition",
+          "Real-time location on interactive map",
+          "Detailed history of routes and stops",
+          "Configurable alerts: overspeed, forbidden zones, unauthorized startup",
           "Dashboard accessible from computer and smartphone",
-          "Discreet installation compatible with all vehicle types"
+          "Discreet installation compatible with all types of vehicles"
         ]
       },
       {
         "id": "fuel-monitoring",
-        "title": "Fuel Monitoring & Management",
-        "description": "Eliminate fuel losses and optimize consumption with our advanced monitoring solutions. Our high-precision sensors detect anomalies in real time — whether on your vehicles or stationary storage tanks.",
+        "title": "Fuel monitoring and management",
+        "description": "Eliminate fuel losses and optimize your consumption with our advanced monitoring solutions. Our high-precision sensors detect anomalies in real time, whether on your vehicles or storage tanks.",
         "features": [
           "High-precision fuel level sensors",
           "Instant detection of theft and leaks",
-          "Monitoring for stationary tanks and vehicle fuel systems",
+          "Monitoring of fixed tanks and vehicle reservoirs",
           "Detailed consumption reports and automatic alerts",
           "Integration with GPS systems for unified fleet management"
         ]
       },
       {
-        "id": "drilling",
-        "title": "Drilling boreholes",
-        "description": "We drill water boreholes for different objectives in diverse environments. We conduct in-depth studies to deliver high-quality wells precisely suited to your needs. We strictly observe safety, hygiene, and environmental standards to your complete satisfaction — serving both community spaces and industry. Water quality analysis can be provided on request.",
-        "features": [
-          "In-depth studies for high-quality borehole drilling",
-          "Compliance with safety, hygiene and environmental standards",
-          "Operations in community and industrial environments",
-          "Water quality analysis available on request",
-          "Multi-environment expertise: domestic, industrial and agricultural water"
-        ]
-      },
-      {
         "id": "environmental",
-        "title": "Environmental tasks",
-        "description": "This century of intense industrialization brings numerous activities that can destroy the environment and disrupt ecosystem balance. We conduct thorough studies of your production activities to propose operating procedures that minimize environmental impact according to universally accepted standards. We implement adequate solutions while guaranteeing clean production. In summary, we take charge from design through to the evacuation of all types of waste.",
+        "title": "Environmental work",
+        "description": "This century of strong industrialization brings us many activities, several of which are of a nature that can destroy the environment and thus break the balance of ecosystems. We provide you with in-depth studies of your production activities to propose adequate modes of operation capable of minimizing as much as possible the impact on the environment according to universally accepted standards. We implement appropriate solutions while guaranteeing healthy production. In summary, we take you in charge from conception to the disposal of all types of waste.",
         "features": [
-          "Environmental impact studies for your production activities",
-          "Tailored operating procedures to minimize ecological impact",
-          "Solutions compliant with universally accepted environmental standards",
+          "Environmental impact studies of your production activities",
+          "Operating modes adapted to minimize ecological impact",
+          "Solutions compliant with universal environmental standards",
           "Complete waste management: from design to disposal",
-          "Ensuring clean and sustainable production"
+          "Guarantee of healthy and sustainable production"
         ]
       }
     ],
     "gpsAbroad": {
-      "title": "GPS Tracking Abroad",
-      "subtitle": "Our GPS trackers work in real-time across multiple African countries: Tanzania, Zambia and DRC",
-      "watchLabel": "Watch video",
+      "title": "GPS tracking internationally",
+      "subtitle": "Our GPS trackers work in real-time in several African countries",
+      "watchLabel": "Watch the video",
       "sections": [
         {
           "country": "TANZANIA",
@@ -151,9 +163,9 @@
     }
   },
   "team": {
-    "title": "Our team",
+    "title": "Our Team",
     "subtitle": "Passionate professionals at the heart of our projects",
-    "metaDescription": "Meet the NJIWA team \u2014 dedicated experts in vehicle importation, solar energy, GPS tracking, and environmental solutions.",
+    "metaDescription": "Meet the NJIWA team, experts dedicated to vehicle imports, solar energy, GPS and the environment.",
     "experienceLabel": "Experience",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
@@ -163,21 +175,21 @@
       {
         "id": "ventury",
         "name": "Ventury LWAPULA KULAILA",
-        "role": "CEO",
+        "role": "General Director",
         "experience": "15 years",
         "email": "chm@njiwardc.com",
         "phone": "+243 81 405 5044",
-        "location": "HQ office in Lubumbashi",
+        "location": "Headquarters in Lubumbashi",
         "nationality": "Congolese"
       },
       {
         "id": "mike",
         "name": "Mike KAPAPA KULAILA",
-        "role": "CTO",
+        "role": "Technical Director",
         "experience": "6 years",
         "email": "mkulaila@njiwardc.com",
         "phone": "+243 99 429 5180",
-        "location": "HQ office in Lubumbashi",
+        "location": "Headquarters in Lubumbashi",
         "nationality": "Congolese"
       },
       {
@@ -187,41 +199,41 @@
         "experience": "4 years",
         "email": "tmukebo@njiwardc.com",
         "phone": "+255 760 424 942",
-        "location": "Connecting office in Dar es Salaam (Tanzania)",
+        "location": "Liaison office in Dar es Salaam (Tanzania)",
         "nationality": "Congolese"
       },
       {
         "id": "plamedie",
         "name": "Plamedie KAPAPA MUMBA",
-        "role": "Financial Manager",
+        "role": "Financial Director",
         "experience": "2 years",
         "email": "pkapapa@njiwardc.com",
         "phone": "+243 996 744 450",
-        "location": "HQ Lubumbashi",
+        "location": "Headquarters in Lubumbashi",
         "nationality": "Congolese"
       },
       {
         "id": "jimmy",
         "name": "Jimmy Peter KAMPATE",
-        "role": "Driver Manager",
+        "role": "Head Driver",
         "experience": "12 years",
         "email": "",
         "phone": "+255 673 828 085",
-        "location": "Connecting office at Tunduma (Tanzania)",
+        "location": "Liaison office in Tunduma (Tanzania)",
         "nationality": "Tanzanian"
       }
     ]
   },
   "contact": {
-    "title": "Contact us",
-    "subtitle": "Have a project or a question? Our team is ready to help.",
+    "title": "Contact Us",
+    "subtitle": "Have a project or a question? Our team is here to listen.",
     "mapLabel": "Find us",
     "addressFull": {
-      "label": "Head quarter office",
+      "label": "Headquarters",
       "lines": [
-        "2, KAMBOVE STREET, C/LUBUMBASHI",
-        "KIWELE QUARTER",
-        "TOWN OF LUBUMBASHI",
+        "2, AV KAMBOVE, C/LUBUMBASHI",
+        "QUARTIER KIWELE",
+        "CITY OF LUBUMBASHI",
         "HAUT-KATANGA PROVINCE",
         "DEMOCRATIC REPUBLIC OF CONGO"
       ]
@@ -230,30 +242,31 @@
       "name": "Full name",
       "email": "Email address",
       "phone": "Phone number",
-      "service": "Service of interest",
+      "service": "Desired service",
       "message": "Your message",
       "submit": "Send message",
       "serviceOptions": [
-        "Used Vehicle Import",
-        "Solar Energy Systems",
-        "GPS Vehicle Tracking",
-        "Fuel Monitoring",
-        "Drilling boreholes",
-        "Environmental tasks",
-        "Other inquiry"
+        "Solar energy systems",
+        "Water well drilling",
+        "Used vehicle imports",
+        "Sale of rare automobile parts",
+        "Vehicle GPS tracking",
+        "Fuel monitoring",
+        "Environmental work",
+        "Other request"
       ],
-      "successMessage": "Thank you for your message! Our team will get back to you as soon as possible."
+      "successMessage": "Thank you for your message! Our team will respond to you shortly."
     },
     "addressLabel": "Address",
     "phoneLabel": "Phone",
     "emailLabel": "Email"
   },
   "footer": {
-    "description": "NJIWA is your trusted partner for used vehicle imports, solar energy solutions, GPS tracking, and fuel management.",
-    "quickLinks": "Quick links",
-    "services": "Our services",
+    "description": "NJIWA is your trusted partner for used vehicle imports, solar solutions, GPS tracking and fuel management.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
     "contactInfo": {
-      "address": "2, Kambove Street, Kiwele Quarter, Lubumbashi, DRC",
+      "address": "2, Av Kambove, Qr Kiwele, Lubumbashi, DRC",
       "phone": "(+243) 994 295 180 / 814 055 044",
       "email": "info@njiwardc.com"
     },
@@ -270,8 +283,8 @@
     "heading": "404",
     "description": "Sorry, the page you are looking for does not exist or has been moved.",
     "suggestion": "Check the URL or explore our pages below.",
-    "backHome": "Back to Home",
-    "browseServices": "Explore our services",
+    "backHome": "Back to home",
+    "browseServices": "Discover our services",
     "contactUs": "Contact us"
   }
 }

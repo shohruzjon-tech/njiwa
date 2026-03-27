@@ -27,7 +27,7 @@ export default function Footer({ dict, lang }: FooterProps) {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <a href={`/${lang}`} className="flex items-center">
-              <Image src="/logo.svg" alt="NJIWA" width={44} height={44} />
+              <Image src="/logo.svg" alt="NJIWA" width={100} height={72} />
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-500">
               {dict.footer.description}

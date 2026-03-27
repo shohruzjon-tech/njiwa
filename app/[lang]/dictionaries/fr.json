@@ -16,38 +16,62 @@
   "about": {
     "title": "Qui sommes-nous",
     "subtitle": "Un partenaire de confiance à votre service",
-    "description": "NJIWA est une entreprise spécialisée dans l'importation de véhicules d'occasion de qualité et dans les solutions technologiques pour le transport et l'énergie. Nous mettons notre expertise au service des particuliers, des entreprises et des institutions afin de leur offrir des produits fiables à des prix compétitifs.",
+    "description": "NJIWA est une compagnie qui offre une grande gamme de service tant au grand public qu'aux entreprises. Elle se concentre principalement sur la vente des véhicules d'occasion importés de partout le monde entier, les installations des systèmes solaires, les forages des eaux dans les communautés et dans les entreprises, études et implémentations des systèmes environnementaux, installation des systèmes GPS ainsi que de contrôle des carburant sur des véhicules automoteurs et statiques.",
     "mission": {
       "title": "Notre mission",
-      "description": "Fournir des véhicules d'occasion rigoureusement sélectionnés et des solutions énergétiques et technologiques innovantes qui répondent aux besoins réels de nos clients, tout en garantissant un service irréprochable et un accompagnement personnalisé."
+      "description": "Notre mission est de vous fournir des véhicules, du courant, de l'eau et assurer la sécurité de vos véhicules tout en préservant l'environnement. Tous nos travaux sont conduits de manière à produire en vous une pleine satisfaction. Nous sommes très attentifs à vos doléances afin d'améliorer nos standards pour que votre satisfaction soit totale. Vos doléances et suggestions, nous y comptons énormément. Avec votre appui et accompagnement, nous rendons un service de qualité et à des prix très compétitifs face à la concurrence."
     },
     "vision": {
       "title": "Notre vision",
-      "description": "Devenir la référence en Afrique centrale pour l'importation de véhicules d'occasion et les solutions intégrées en énergie solaire, suivi de flotte et gestion de carburant, en plaçant la satisfaction client au cœur de chaque décision."
+      "description": "Nous comptons bien assurer la visibilité de notre entreprise par un service de bonne qualité rendu à notre aimable clientèle. Par notre sérieux, qualité, disponibilité nous serons à même de faire parler de NJIWA dans de grands forums africains. Être une référence dans un ou plusieurs des domaines dans lesquels nous évoluons. Nous sommes très sûrs que la satisfaction de nos clients nous ouvrira toutes les portes."
     },
     "values": [
       {
         "title": "Fiabilité",
-        "description": "Chaque véhicule est inspecté et chaque système est testé pour garantir une qualité irréprochable à nos clients."
+        "description": "Nos travaux sont conduits pas par tâtonnement, mais avec conviction. Avec la forte expérience que nous avons dans les différents domaines, nos travaux sont exécutés dans les respects des normes et des matériaux sélectionnés de haute qualité. Et les contrôles de qualité accompagnent toutes les étapes de réalisation de nos différentes tâches."
       },
       {
         "title": "Transparence",
-        "description": "Nous communiquons ouvertement sur les prix, les délais et l'état de chaque produit ou service que nous proposons."
+        "description": "Nous communiquons de manière très simple et ouverte avec nos clients de manière à ce que nous aboutissions à ce que eux veulent. Explicitons toutes les tâches, coûts et timing en vue de nous mettre à l'abris du désagrément."
       },
       {
         "title": "Innovation",
-        "description": "Nous adoptons les technologies les plus récentes pour offrir des solutions performantes et adaptées au contexte local."
+        "description": "Nous exécutons les travaux de nos clients en usant de notre grande expérience en vue de les réjouir au-delà de leurs attentes. Tel est notre état esprit quand nous rendons services."
       },
       {
         "title": "Engagement client",
-        "description": "Votre satisfaction est notre priorité. Nous vous accompagnons avant, pendant et après chaque projet."
+        "description": "Votre satisfaction est notre priorité. Voilà pourquoi, nous ne vous abandonnons pas. Nous sommes avec vous avant, pendant ainsi qu'après le projet pour que votre satisfaction soit complète."
       }
     ]
   },
   "services": {
     "title": "Nos services",
-    "subtitle": "Des solutions complètes pour vos véhicules et votre énergie",
+    "subtitle": "Solution complète pour vos véhicules, forage d'eau, projets environnementaux et pour l'énergie",
     "items": [
+      {
+        "id": "solar-energy",
+        "title": "Systèmes d'énergie solaire",
+        "description": "Nous concevons et installons des systèmes solaires sur mesure pour les habitations, les entreprises et les sites isolés. Réduisez votre dépendance au réseau électrique et maîtrisez vos coûts énergétiques grâce à une énergie propre et renouvelable.",
+        "features": [
+          "Étude technique et dimensionnement personnalisé",
+          "Panneaux solaires haute performance et onduleurs certifiés",
+          "Solutions résidentielles, commerciales et industrielles",
+          "Systèmes autonomes ou hybrides avec batteries de stockage",
+          "Maintenance préventive et assistance technique après installation"
+        ]
+      },
+      {
+        "id": "drilling",
+        "title": "Forage des puits",
+        "description": "Nous exécutons des puits d'eau servant à des objectifs différents dans des milieux aussi différents. Nous assurons des études approfondies en vue de vous exécuter des puits de bonne qualité susceptibles de répondre exactement à vos attentes. Selon les objectifs de vos puits, nous observons les recommandations tant sécuritaires, hygiéniques et environnementales à votre satisfaction entière. Nous évoluons dans les espaces communautaires comme à l'industrie en général. Selon vos aspirations, les analyses de qualité de l'eau pourront vous être fournies au besoin.",
+        "features": [
+          "Études approfondies pour des puits de haute qualité",
+          "Respect des normes sécuritaires, hygiéniques et environnementales",
+          "Intervention en espaces communautaires et industriels",
+          "Analyses de qualité de l'eau disponibles sur demande",
+          "Expertise multi-milieux : eau domestique, industrielle et agricole"
+        ]
+      },
       {
         "id": "used-vehicles",
         "title": "Importation de véhicules d'occasion",
@@ -61,15 +85,15 @@
         ]
       },
       {
-        "id": "solar-energy",
-        "title": "Systèmes d'énergie solaire",
-        "description": "Nous concevons et installons des systèmes solaires sur mesure pour les habitations, les entreprises et les sites isolés. Réduisez votre dépendance au réseau électrique et maîtrisez vos coûts énergétiques grâce à une énergie propre et renouvelable.",
+        "id": "rare-parts",
+        "title": "Vente de pièces automobiles rares",
+        "description": "Dans le cadre d'apporter encore plus de support à nos chers clients, nous vendons des pièces qui ne sont pas facilement trouvables sur notre marché local. Nous travaillons avec un service très compétent pour la recherche des pièces de bonne qualité que nous commandons de partout dans le monde entier.",
         "features": [
-          "Étude technique et dimensionnement personnalisé",
-          "Panneaux solaires haute performance et onduleurs certifiés",
-          "Solutions résidentielles, commerciales et industrielles",
-          "Systèmes autonomes ou hybrides avec batteries de stockage",
-          "Maintenance préventive et assistance technique après installation"
+          "Sourcing de pièces rares et difficiles à trouver localement",
+          "Réseau mondial de fournisseurs de confiance",
+          "Garantie de qualité sur toutes les pièces commandées",
+          "Délais de livraison rapides et fiables",
+          "Support technique pour l'installation et l'entretien"
         ]
       },
       {
@@ -97,18 +121,6 @@
         ]
       },
       {
-        "id": "drilling",
-        "title": "Forage des puits",
-        "description": "Nous exécutons des puits d'eau servant à des objectifs différents dans des milieux aussi différents. Nous assurons des études approfondies en vue de vous exécuter des puits de bonne qualité susceptibles de répondre exactement à vos attentes. Selon les objectifs de vos puits, nous observons les recommandations tant sécuritaires, hygiéniques et environnementales à votre satisfaction entière. Nous évoluons dans les espaces communautaires comme à l'industrie en général. Selon vos aspirations, les analyses de qualité de l'eau pourront vous être fournies au besoin.",
-        "features": [
-          "Études approfondies pour des puits de haute qualité",
-          "Respect des normes sécuritaires, hygiéniques et environnementales",
-          "Intervention en espaces communautaires et industriels",
-          "Analyses de qualité de l'eau disponibles sur demande",
-          "Expertise multi-milieux : eau domestique, industrielle et agricole"
-        ]
-      },
-      {
         "id": "environmental",
         "title": "Travaux environnementaux",
         "description": "Ce siècle de forte industrialisation nous apporte plusieurs activités dont plusieurs d'entre elles, sont de nature à détruire l'environnement et ainsi rompre l'équilibre des écosystèmes. Nous vous assurons des études approfondies de vos activités de production afin de vous proposer des modes opératoires adéquats susceptibles de minimiser le plus possible l'impact sur l'environnement selon des normes universellement acceptées. Nous implémentons les solutions adéquates tout en garantissant une production saine. En résumé, nous vous prenons en charge dès la conception jusqu'à l'évacuation de tout type de déchet.",
@@ -123,7 +135,7 @@
     ],
     "gpsAbroad": {
       "title": "Suivi GPS à l'international",
-      "subtitle": "Nos traceurs GPS fonctionnent en temps réel dans plusieurs pays d'Afrique : Tanzanie, Zambie et RDC",
+      "subtitle": "Nos traceurs GPS fonctionnent en temps réel dans plusieurs pays d'Afrique",
       "watchLabel": "Voir la vidéo",
       "sections": [
         {
@@ -234,11 +246,12 @@
       "message": "Votre message",
       "submit": "Envoyer le message",
       "serviceOptions": [
-        "Importation de véhicules d'occasion",
         "Systèmes d'énergie solaire",
+        "Forage des puits",
+        "Importation de véhicules d'occasion",
+        "Vente de pièces automobiles rares",
         "Suivi GPS de véhicules",
         "Contrôle de carburant",
-        "Forage des puits",
         "Travaux environnementaux",
         "Autre demande"
       ],

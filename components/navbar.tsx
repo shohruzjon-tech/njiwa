@@ -23,7 +23,7 @@ export default function Navbar({ dict, lang }: NavbarProps) {
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <a href={`/${lang}`} className="flex items-center">
-          <Image src="/logo.svg" alt="NJIWA" width={44} height={44} priority />
+          <Image src="/logo.svg" alt="NJIWA" width={100} height={72} priority />
         </a>
 
         {/* Desktop nav */}
@@ -43,9 +43,10 @@ export default function Navbar({ dict, lang }: NavbarProps) {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href={`/${otherLang}`}
-            className="rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-500 transition-colors hover:text-white"
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-lg transition-colors hover:bg-white/[0.04]"
+            title={otherLang === "en" ? "English" : "Français"}
           >
-            {otherLang.toUpperCase()}
+            {otherLang === "en" ? "🇬🇧" : "🇫🇷"}
           </a>
           <a
             href={`/${lang}/contact`}
