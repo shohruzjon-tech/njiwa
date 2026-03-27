@@ -15,14 +15,16 @@ export async function generateMetadata({
   const dict = await getDictionary(lang as Locale);
 
   const otherLang = lang === "fr" ? "en" : "fr";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwardc.com";
 
   return {
     title: `${dict.contact.title} — NJIWA`,
     description: dict.contact.subtitle,
     alternates: {
-      canonical: `/${lang}/contact`,
+      canonical: `${baseUrl}/${lang}/contact`,
       languages: {
-        [otherLang]: `/${otherLang}/contact`,
+        [otherLang]: `${baseUrl}/${otherLang}/contact`,
+        "x-default": `${baseUrl}/fr/contact`,
       },
     },
     openGraph: {
@@ -31,7 +33,7 @@ export async function generateMetadata({
       type: "website",
       locale: lang,
       alternateLocale: otherLang,
-      url: `/${lang}/contact`,
+      url: `${baseUrl}/${lang}/contact`,
     },
   };
 }

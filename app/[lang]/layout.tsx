@@ -9,7 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwa.cd";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwardc.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

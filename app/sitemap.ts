@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwa.cd";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwardc.com";
 
 const locales = ["fr", "en"] as const;
 const defaultLocale = "fr";
@@ -20,12 +20,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: route === "" ? "weekly" : "monthly",
         priority: route === "" ? 1.0 : route === "/services" ? 0.9 : 0.8,
         alternates: {
-          languages: Object.fromEntries(
-            locales.map((l) => [
-              l === defaultLocale ? "fr-CD" : "en",
-              `${BASE_URL}/${l}${route}`,
-            ]),
-          ),
+          languages: {
+            ...Object.fromEntries(
+              locales.map((l) => [
+                l === defaultLocale ? "fr-CD" : "en",
+                `${BASE_URL}/${l}${route}`,
+              ]),
+            ),
+            "x-default": `${BASE_URL}/${defaultLocale}${route}`,
+          },
         },
       });
     }

@@ -21,14 +21,16 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
   const otherLang = lang === "fr" ? "en" : "fr";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://njiwardc.com";
 
   return {
     title: `${dict.team.title} — NJIWA`,
     description: dict.team.metaDescription,
     alternates: {
-      canonical: `/${lang}/team`,
+      canonical: `${baseUrl}/${lang}/team`,
       languages: {
-        [otherLang]: `/${otherLang}/team`,
+        [otherLang]: `${baseUrl}/${otherLang}/team`,
+        "x-default": `${baseUrl}/fr/team`,
       },
     },
     openGraph: {
@@ -37,7 +39,7 @@ export async function generateMetadata({
       type: "website",
       locale: lang,
       alternateLocale: otherLang,
-      url: `/${lang}/team`,
+      url: `${baseUrl}/${lang}/team`,
     },
   };
 }
